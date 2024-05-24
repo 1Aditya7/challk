@@ -1,5 +1,13 @@
 import Link from "next/link"
 import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+import {
   CircleUser,
   Grid,
   Home,
@@ -37,7 +45,7 @@ function Dashboard() {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <div className="hidden border-r bg-muted/40 md:block">
-        <div className="flex h-full max-h-screen flex-col gap-2">
+        <div className="flex h-full max-h-screen flex-col gap-2 fixed">
           <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
             <Link href="/" className="flex items-center gap-2 font-semibold">
               <Clipboard className="h-6 w-6" />
@@ -50,38 +58,35 @@ function Dashboard() {
           <div className="flex-1">
             <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
               <Link
-                href="#"
+                href="/dashboarf"
                 className="flex items-center gap-3 rounded-lg bg-secondary px-3 py-2 text-primary transition-all hover:text-primary"
               >
                 <Grid className="h-4 w-4" />
                 Dashboard
               </Link>
               <Link
-                href="#"
+                href="/home"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <Home className="h-4 w-4" />
                 LMS HOME
-                <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                  6
-                </Badge>
               </Link>
               <Link
-                href="#"
+                href="/courses"
                 className="flex items-center gap-3 rounded-lg bg-active px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <Book className="h-4 w-4" />
                 Courses
               </Link>
               <Link
-                href="#"
+                href="/passbook"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <Users className="h-4 w-4" />
                 Passbook
               </Link>
               <Link
-                href="#"
+                href="/attendance"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <LineChart className="h-4 w-4" />
@@ -213,14 +218,13 @@ function Dashboard() {
             </DropdownMenuContent>
           </DropdownMenu>
         </header>
-        <main className="flex flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+        <main className="flex flex-col gap-4 p-6 lg:gap-6 lg:p-6">
           <div className="flex items-center justify-between w-full">
             <h1 className="text-lg font-semibold md:text-2xl">Welcome Back!</h1>
-            <Button className="absolute top-20 right-20 mt-4">Enroll Course</Button>
+            <Button className="absolute top-16 right-20 mt-4">Enroll Course</Button>
           </div>
           <div
-            className="flex flex-1 justify-items-start items-stretch mt-2" x-chunk="dashboard-02-chunk-1"
-          >
+            className="flex flex-1 justify-items-start items-stretch mt-2" x-chunk="dashboard-02-chunk-1">
             <Card className="sm:col-span-1 mr-2">
               <CardHeader className="pb-2">
                 <CardTitle>Design and Analysis of Algorithms</CardTitle>
@@ -261,6 +265,163 @@ function Dashboard() {
               <p className="text-sm text-muted-foreground">
               </p>
             </div>
+          </div>
+          <div>
+          <Card>
+            <CardHeader className="px-7">
+              <CardTitle>Orders</CardTitle>
+              <CardDescription>Recent orders from your store.</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Customer</TableHead>
+                    <TableHead className="hidden sm:table-cell">Type</TableHead>
+                    <TableHead className="hidden sm:table-cell">Status</TableHead>
+                    <TableHead className="hidden md:table-cell">Date</TableHead>
+                    <TableHead className="text-right">Amount</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  <TableRow className="bg-accent">
+                    <TableCell>
+                      <div className="font-medium">Liam Johnson</div>
+                      <div className="hidden text-sm text-muted-foreground md:inline">
+                        liam@example.com
+                      </div>
+                    </TableCell>
+                    <TableCell className="hidden sm:table-cell">Sale</TableCell>
+                    <TableCell className="hidden sm:table-cell">
+                      <Badge className="text-xs" variant="secondary">
+                        Fulfilled
+                      </Badge>
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">2023-06-23</TableCell>
+                    <TableCell className="text-right">$250.00</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      <div className="font-medium">Olivia Smith</div>
+                      <div className="hidden text-sm text-muted-foreground md:inline">
+                        olivia@example.com
+                      </div>
+                    </TableCell>
+                    <TableCell className="hidden sm:table-cell">Refund</TableCell>
+                    <TableCell className="hidden sm:table-cell">
+                      <Badge className="text-xs" variant="outline">
+                        Declined
+                      </Badge>
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">2023-06-24</TableCell>
+                    <TableCell className="text-right">$150.00</TableCell>
+                  </TableRow>
+                  {/* <TableRow>
+                                <TableCell>
+                                  <div className="font-medium">Liam Johnson</div>
+                                  <div className="hidden text-sm text-muted-foreground md:inline">
+                                    liam@example.com
+                                  </div>
+                                </TableCell>
+                                <TableCell className="hidden sm:table-cell">
+                                  Sale
+                                </TableCell>
+                                <TableCell className="hidden sm:table-cell">
+                                  <Badge className="text-xs" variant="secondary">
+                                    Fulfilled
+                                  </Badge>
+                                </TableCell>
+                                <TableCell className="hidden md:table-cell">
+                                  2023-06-23
+                                </TableCell>
+                                <TableCell className="text-right">$250.00</TableCell>
+                              </TableRow> */}
+                  <TableRow>
+                    <TableCell>
+                      <div className="font-medium">Noah Williams</div>
+                      <div className="hidden text-sm text-muted-foreground md:inline">
+                        noah@example.com
+                      </div>
+                    </TableCell>
+                    <TableCell className="hidden sm:table-cell">
+                      Subscription
+                    </TableCell>
+                    <TableCell className="hidden sm:table-cell">
+                      <Badge className="text-xs" variant="secondary">
+                        Fulfilled
+                      </Badge>
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">2023-06-25</TableCell>
+                    <TableCell className="text-right">$350.00</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      <div className="font-medium">Emma Brown</div>
+                      <div className="hidden text-sm text-muted-foreground md:inline">
+                        emma@example.com
+                      </div>
+                    </TableCell>
+                    <TableCell className="hidden sm:table-cell">Sale</TableCell>
+                    <TableCell className="hidden sm:table-cell">
+                      <Badge className="text-xs" variant="secondary">
+                        Fulfilled
+                      </Badge>
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">2023-06-26</TableCell>
+                    <TableCell className="text-right">$450.00</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      <div className="font-medium">Liam Johnson</div>
+                      <div className="hidden text-sm text-muted-foreground md:inline">
+                        liam@example.com
+                      </div>
+                    </TableCell>
+                    <TableCell className="hidden sm:table-cell">Sale</TableCell>
+                    <TableCell className="hidden sm:table-cell">
+                      <Badge className="text-xs" variant="secondary">
+                        Fulfilled
+                      </Badge>
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">2023-06-23</TableCell>
+                    <TableCell className="text-right">$250.00</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      <div className="font-medium">Olivia Smith</div>
+                      <div className="hidden text-sm text-muted-foreground md:inline">
+                        olivia@example.com
+                      </div>
+                    </TableCell>
+                    <TableCell className="hidden sm:table-cell">Refund</TableCell>
+                    <TableCell className="hidden sm:table-cell">
+                      <Badge className="text-xs" variant="outline">
+                        Declined
+                      </Badge>
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">2023-06-24</TableCell>
+                    <TableCell className="text-right">$150.00</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      <div className="font-medium">Emma Brown</div>
+                      <div className="hidden text-sm text-muted-foreground md:inline">
+                        emma@example.com
+                      </div>
+                    </TableCell>
+                    <TableCell className="hidden sm:table-cell">Sale</TableCell>
+                    <TableCell className="hidden sm:table-cell">
+                      <Badge className="text-xs" variant="secondary">
+                        Fulfilled
+                      </Badge>
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">2023-06-26</TableCell>
+                    <TableCell className="text-right">$450.00</TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </CardContent>
+          </Card>
           </div>
         </main>
       </div>
