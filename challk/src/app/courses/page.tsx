@@ -38,7 +38,7 @@ function Dashboard() {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <div className="hidden border-r bg-muted/40 md:block">
-        <div className="flex h-full max-h-screen flex-col gap-2">
+        <div className="flex h-full max-h-screen flex-col gap-2 fixed">
           <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
             <Link href="/" className="flex items-center gap-2 font-semibold">
               <Clipboard className="h-6 w-6" />
@@ -51,18 +51,18 @@ function Dashboard() {
           <div className="flex-1">
             <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
               <Link
-                href="#"
+                href="/dashboard"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <Grid className="h-4 w-4" />
                 Dashboard
               </Link>
               <Link
-                href="#"
+                href="/home"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <Home className="h-4 w-4" />
-                LMS HOME
+                LMS Home
               </Link>
               <Link
                 href="#"
@@ -72,7 +72,7 @@ function Dashboard() {
                 Courses
               </Link>
               <Link
-                href="#"
+                href="/passbook"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <Users className="h-4 w-4" />
@@ -215,91 +215,75 @@ function Dashboard() {
           <div className="flex items-center">
             <h1 className="text-lg font-semibold md:text-2xl">Welcome Back!</h1>
             <Button className="absolute top-20 right-20 mt-0.5">Enroll Course</Button>
-            
           </div>
-          <div
-            className="flex-col" >
-            <div>
-                <div>
+          <div className="grid grid-cols-3 gap-4 mt-4">
                     <Card>
-                    <CardHeader className="pb-3">
-                        <CardTitle>Data Structures and Algorithms</CardTitle>
-                        <CardDescription className="max-w-lg text-balance leading-relaxed">
-                        Subject code:001
-                        </CardDescription>
-                    </CardHeader>
-                    <CardFooter>
-                        <Button>View Course</Button>
-                    </CardFooter>
+                      <CardHeader className="pb-3">
+                          <CardTitle>Data Structures and Algorithms</CardTitle>
+                          <CardDescription className="max-w-lg text-balance leading-relaxed">
+                          Subject code:001
+                          </CardDescription>
+                      </CardHeader>
+                      <CardFooter>
+                          <Button>View Course</Button>
+                      </CardFooter>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-3">
+                          <CardTitle>Data base management systems</CardTitle>
+                          <CardDescription className="max-w-lg text-balance leading-relaxed">
+                          Subject code:002
+                          </CardDescription>
+                      </CardHeader>
+                      <CardFooter>
+                          <Button>View course</Button>
+                      </CardFooter>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-3">
+                          <CardTitle>Python</CardTitle>
+                          <CardDescription className="max-w-lg text-balance leading-relaxed">
+                          Subject code:003
+                          </CardDescription>
+                      </CardHeader>
+                      <CardFooter>
+                          <Button>View course</Button>
+                      </CardFooter>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-3">
+                          <CardTitle>Mathematics</CardTitle>
+                          <CardDescription className="max-w-lg text-balance leading-relaxed">
+                          Subject code:004
+                          </CardDescription>
+                      </CardHeader>
+                      <CardFooter>
+                          <Button>View course</Button>
+                      </CardFooter>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-3">
+                          <CardTitle>Soft skills</CardTitle>
+                          <CardDescription className="max-w-lg text-balance leading-relaxed">
+                          Subject code:005
+                          </CardDescription>
+                      </CardHeader>
+                      <CardFooter>
+                          <Button>View course</Button>
+                      </CardFooter>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-3">
+                          <CardTitle>Aptitude Training</CardTitle>
+                          <CardDescription className="max-w-lg text-balance leading-relaxed">
+                          Subject code:006
+                          </CardDescription>
+                      </CardHeader>
+                      <CardFooter>
+                          <Button>View course</Button>
+                      </CardFooter>
                     </Card>
                 </div>
-                <div>
-                    <Card>
-                    <CardHeader className="pb-3">
-                        <CardTitle>Data base management systems</CardTitle>
-                        <CardDescription className="max-w-lg text-balance leading-relaxed">
-                        Subject code:002
-                        </CardDescription>
-                    </CardHeader>
-                    <CardFooter>
-                        <Button>View course</Button>
-                    </CardFooter>
-                    </Card>
-                </div>
-                <div>
-                    <Card>
-                    <CardHeader className="pb-3">
-                        <CardTitle>Python</CardTitle>
-                        <CardDescription className="max-w-lg text-balance leading-relaxed">
-                        Subject code:003
-                        </CardDescription>
-                    </CardHeader>
-                    <CardFooter>
-                        <Button>View course</Button>
-                    </CardFooter>
-                    </Card>
-                </div>
-                <div>
-                    <Card>
-                    <CardHeader className="pb-3">
-                        <CardTitle>Mathematics</CardTitle>
-                        <CardDescription className="max-w-lg text-balance leading-relaxed">
-                        Subject code:004
-                        </CardDescription>
-                    </CardHeader>
-                    <CardFooter>
-                        <Button>View course</Button>
-                    </CardFooter>
-                    </Card>
-                </div>
-                <div>
-                    <Card>
-                    <CardHeader className="pb-3">
-                        <CardTitle>Soft skills</CardTitle>
-                        <CardDescription className="max-w-lg text-balance leading-relaxed">
-                        Subject code:005
-                        </CardDescription>
-                    </CardHeader>
-                    <CardFooter>
-                        <Button>View course</Button>
-                    </CardFooter>
-                    </Card>
-                </div>
-                <div>
-                    <Card>
-                    <CardHeader className="pb-3">
-                        <CardTitle>Aptitude Training</CardTitle>
-                        <CardDescription className="max-w-lg text-balance leading-relaxed">
-                        Subject code:006
-                        </CardDescription>
-                    </CardHeader>
-                    <CardFooter>
-                        <Button>View course</Button>
-                    </CardFooter>
-                    </Card>
-                </div>
-            </div>
-          </div>
         </main>
       </div>
     </div>
