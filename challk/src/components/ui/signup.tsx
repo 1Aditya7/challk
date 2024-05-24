@@ -1,8 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, ChangeEvent, FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export default function RegisterForm() {
   const [name, setName] = useState<string>("");
@@ -21,7 +25,7 @@ export default function RegisterForm() {
     }
 
     try {
-      const resUserExists = await fetch("api/userExists", {
+      const resUserExists = await fetch("/api/userExists", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +40,7 @@ export default function RegisterForm() {
         return;
       }
 
-      const res = await fetch("api/signup", {
+      const res = await fetch("/api/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,40 +70,61 @@ export default function RegisterForm() {
     };
 
   return (
-    <div className="grid place-items-center w-[500px] h-screen ">
-      <div className="shadow-lg p-5 rounded-lg border-t-4 border-orange-400">
-        <h1 className="text-xl font-bold my-4">Register</h1>
-
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-          <input
-            onChange={handleChange(setName)}
-            type="text"
-            placeholder="Full Name"
-          />
-          <input
-            onChange={handleChange(setEmail)}
-            type="text"
-            placeholder="Email"
-          />
-          <input
-            onChange={handleChange(setPassword)}
-            type="password"
-            placeholder="Password"
-          />
-          <button className="bg-orange-600 text-white font-bold  w-[450px] cursor-pointer px-6 py-2">
-            Register
-          </button>
-          <Link className="text-sm mt-3 text-right" href={"/login"}>
-            Already have an account? <span className="underline">Login</span>
-          </Link>
-          {error && (
-            <div className="bg-red-500 text-white w-fit text-sm py-1 px-3 rounded-md mt-2">
-              {error}
+    <div className="w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px]">
+      <div className="flex flex-col items-center justify-center h-screen">
+        <div className="mx-auto my-30 grid w-[350px] gap-12">
+          <div className="grid gap-2 text-center">
+            <h3 className="text-3xl font-bold"> New User Register</h3>
+          </div>
+          <form onSubmit={handleSubmit} className="grid gap-4">
+            <div className="grid gap-2">
+              <Label htmlFor="name">Full Name</Label>
+              <Input
+                id="name"
+                type="text"
+                placeholder="Full Name"
+                required
+                onChange={handleChange(setName)}
+              />
             </div>
-          )}
-
-          
-        </form>
+            <div className="grid gap-2">
+              <Label htmlFor="email">Email</Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="m@example.com"
+                required
+                onChange={handleChange(setEmail)}
+              />
+            </div>
+            <div className="grid gap-2">
+              <Label htmlFor="password">Password</Label>
+              <Input
+                id="password"
+                type="password"
+                required
+                onChange={handleChange(setPassword)}
+              />
+            </div>
+            <Button type="submit" className="w-full bg-orange-600 text-white">
+              Register
+            </Button>
+            <Button variant="outline" className="w-full">
+              Register with Google
+            </Button>
+            {error && (
+              <div className="bg-red-500 text-white w-fit text-sm py-1 px-3 rounded-md mt-2">
+                {error}
+              </div>
+            )}
+          </form>
+          <div className="mt-4 text-center text-sm">
+            Already have an account?{" "}
+            <Link href="/login" className="underline">
+              Login
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
