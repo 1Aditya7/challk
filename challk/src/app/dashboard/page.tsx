@@ -23,6 +23,7 @@ import {
   Clipboard,
   Search,
   ShoppingCart,
+  BookOpenCheck,
   Users,
 } from "lucide-react"
 
@@ -77,7 +78,7 @@ function Dashboard() {
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <Home className="h-4 w-4" />
-                LMS HOME
+                LMS Home
               </Link>
               <Link
                 href="/courses"
@@ -99,6 +100,13 @@ function Dashboard() {
               >
                 <LineChart className="h-4 w-4" />
                 Attendance
+              </Link>
+              <Link
+                href="/cie"
+                className="flex items-center gap-3 rounded-lg bg-active px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+              >
+                <BookOpenCheck className="h-4 w-4" />
+                Continous Internal Evaluation
               </Link>
             </nav>
           </div>
