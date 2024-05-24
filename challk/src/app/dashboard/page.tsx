@@ -18,6 +18,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -212,17 +213,53 @@ function Dashboard() {
             </DropdownMenuContent>
           </DropdownMenu>
         </header>
-        <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
-          <div className="flex items-center">
+        <main className="flex flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+          <div className="flex items-center justify-between w-full">
             <h1 className="text-lg font-semibold md:text-2xl">Welcome Back!</h1>
+            <Button className="absolute top-20 right-20 mt-4">Enroll Course</Button>
           </div>
           <div
-            className="flex flex-1 items-center justify-center rounded-lg border border-dashed shadow-sm" x-chunk="dashboard-02-chunk-1"
+            className="flex flex-1 justify-items-start items-stretch mt-2" x-chunk="dashboard-02-chunk-1"
           >
+            <Card className="sm:col-span-1 mr-2">
+              <CardHeader className="pb-2">
+                <CardTitle>Design and Analysis of Algorithms</CardTitle>
+                <CardDescription className="max-w-xs text-balance leading-relaxed">
+                  Introducing Our Dynamic Orders Dashboard for Seamless Management and
+                  Insightful Analysis.
+                </CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <Button>View Course</Button>
+              </CardFooter>
+            </Card>
+            <Card className="sm:col-span-1 mr-2">
+              <CardHeader className="pb-2">
+                <CardTitle>Design and Analysis of Algorithms</CardTitle>
+                <CardDescription className="max-w-xs text-balance leading-relaxed">
+                  Introducing Our Dynamic Orders Dashboard for Seamless Management and
+                  Insightful Analysis.
+                </CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <Button>View Course</Button>
+              </CardFooter>
+            </Card>
+            <Card className="sm:col-span-1 mr-2">
+              <CardHeader className="pb-2">
+                <CardTitle>Design and Analysis of Algorithms</CardTitle>
+                <CardDescription className="max-w-xs text-balance leading-relaxed">
+                  Introducing Our Dynamic Orders Dashboard for Seamless Management and
+                  Insightful Analysis.
+                </CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <Button>View Course</Button>
+              </CardFooter>
+            </Card>
             <div className="flex flex-col items-center gap-1 text-center">
               <p className="text-sm text-muted-foreground">
               </p>
-              <Button className="absolute top-20 right-20 mt-4">Enroll Course</Button>
             </div>
           </div>
         </main>
