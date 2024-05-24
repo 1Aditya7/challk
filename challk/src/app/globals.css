@@ -49,6 +49,15 @@
     --ring: 20.5 90.2% 48.2%;
   }
 }
+/* styles/globals.css */
+.truncate-multi-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: clip;
+  text-overflow: ellipsis;
+}
 
   @layer base {
     * {
