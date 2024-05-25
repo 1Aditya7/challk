@@ -43,7 +43,7 @@ export default function CourseDetails() {
         <CardHeader className="flex flex-row items-start bg-muted/50">
           <div className="grid gap-0.5">
             <CardTitle className="group flex items-center gap-2 text-lg">
-              Design and Analysis of Algorithms
+              Design and Analysis of Algorithms - {courseId}
             </CardTitle>
             <CardDescription>Course Instructor: Ms. Algo Expert</CardDescription>
           </div>
