@@ -182,29 +182,88 @@ function Dashboard() {
             </DropdownMenuContent>
           </DropdownMenu>
         </header>
-        <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
-          <div className="flex items-center">
-            <h1 className="text-lg font-semibold md:text-2xl">Welcome Back!</h1>
-            <Button className="absolute top-20 right-20 mt-0.5">Enroll Course</Button>
+        <h1 className="text-lg font-semibold mt-4 ml-4 md:text-2xl">Your Enrolled Courses</h1>
+        <h1 className="text-sm font-normal ml-4 md:text-sm text-muted-foreground">For the 4th semester, AY 2023 - 2024</h1>
+        <a href="/courses"><Button  variant="ghost" className="absolute top-16 right-1/4 mt-4 hover:bg-primary bg-opacity-50">View All Courses</Button></a>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4 ml-4 mr-4">
+            <Card>
+              <CardHeader>
+                <CardTitle>Data Visualisation with Python</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Course Code: 22CS412A
+                </CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <Button className="mt-auto">View Course</Button>
+              </CardFooter>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Introduction to Software Technologies</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Course Code: 22CS413A
+                </CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <Button className="mt-auto">View Course</Button>
+              </CardFooter>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Image Processing</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Course Code: 22CS414A
+                </CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <Button className="mt-auto">View Course</Button>
+              </CardFooter>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Design & Analysis of Algorithms</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Course Code: 22CS415A
+                </CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <Button className="mt-auto">View Course</Button>
+              </CardFooter>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Software Engineering</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Course Code: 22CS415A
+                </CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <Button className="mt-auto">View Course</Button>
+              </CardFooter>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Discreet Mathematics</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Course Code: 22MAT31A
+                </CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <Button className="mt-auto">View Course</Button>
+              </CardFooter>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Soft Skills</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Course Code: 22CDC12A
+                </CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <Button className="mt-auto">View Course</Button>
+              </CardFooter>
+            </Card>
           </div>
-          <div className="grid grid-cols-3 gap-4 mt-4">
-            {courses.map(course => (
-              <Card key={course.id}>
-                <CardHeader className="pb-3">
-                  <CardTitle className='leading-normal'>{course.name}</CardTitle>
-                  <CardDescription className="max-w-lg text-balance leading-relaxed">
-                    Subject code: {course.id}
-                  </CardDescription>
-                </CardHeader>
-                <CardFooter>
-                  <Link href={`/courses/${course.id}`} passHref>
-                    <Button as="a" id={`course-link-${course.id}`}>View course</Button>
-                  </Link>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </main>
       </div>
     </div>
   );
