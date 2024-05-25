@@ -227,13 +227,13 @@ return (
       <div
         className="flex flex-1 justify-items-start items-stretch mt-2 w-150 p-10 " x-chunk="dashboard-02-chunk-1"
       >
-        <h1 className="font-semibold text-xl">Welcome to the Home of NMIT LMS</h1>
+        <h1 className="text-gray-700 font-bold text-5xl">PassBook</h1>
         <div className="flex flex-col items-center gap-1 text-center">
           <p className="text-sm text-muted-foreground">
           </p>
         </div>
       </div>
-<div className="flex flex-row gap-4 mx-20 color:primary mt-10 items-stretch">
+<div className="flex flex-row gap-6 mx-20 color:primary mt-10 items-stretch">
     <ReactCardFlip isFlipped={flip} flipDirection="vertical">
         <div className="h-100 w-80 ">
             <Card className=" auto-rows-auto">
@@ -281,7 +281,7 @@ return (
                     <div className="grid gap-3">
                     <p className="text-sm font-medium leading-none"> Name: Peter Parker </p> 
                         <p className="text-sm font-medium leading-none"> Father name: Ben parker </p>
-                        <p className="text-sm font-medium leading-none"> Address: NMIT main gate, BSF campus, Yelahanka, Bangalore </p>
+                        <p className="text-sm font-medium leading-none"> Address: NMIT main gate, BSF campus <br/>, Yelahanka, Bangalore </p>
                         <p className="text-sm font-medium leading-none"> Phone number: 1234567890 </p>
                         <p className="text-sm font-medium leading-none"> Blood Grouo: AB +ve </p>
 
@@ -346,11 +346,9 @@ return (
                         <div className="flex items-center gap-4">
                         <div className="grid gap-3">
                         <p className="text-sm font-medium leading-none"> Name: Peter Parker </p> 
-                            <p className="text-sm font-medium leading-none"> Address: NMIT main gate, BSF campus, Yelahanka, Bangalore </p>
-                            <p className="text-sm font-medium leading-none"> Stop No : 20 </p>
+                            <p className="text-sm font-medium leading-none"> Address: NMIT main gate, BSF campus <br/>,  Yelahanka, Bangalore </p>
                             <p className="text-sm font-medium leading-none"> Stop Location: Drdo bus stop </p>
                             <p className="text-sm font-medium leading-none"> Phone number: 1234567890 </p>
-                            <p className="text-sm font-medium leading-none"> Blood Grouo: AB +ve </p>
                             <p className="text-sm font-medium leading-none"> Fee: Paid </p>
                             
                             
@@ -411,6 +409,7 @@ return (
                         <p className="text-sm font-medium leading-none"> Last book returned: Yes </p>
                         <p className="text-sm font-medium leading-none"> Late return fine: Rs 100 </p>
                         <p className="text-sm font-medium leading-none"> Unreturned books: 3 </p>
+                        <p className="text-sm font-medium leading-none"> Books name: 1. Theory of relativity <br/> 2. How the Time works.</p>
                         <p className="text-sm font-medium leading-none"> Total fine: Rs 2100 </p>
                         
                             
