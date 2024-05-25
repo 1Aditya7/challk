@@ -303,766 +303,6 @@ function Dashboard() {
             </div>
           </div>
           <div className="flex flex-row gap-4 auto-rows-auto">
-          <Tabs className="w-1/3" defaultValue="dsa">
-            <div className="flex items-center">
-              <div className="ml-auto flex items-center gap-2">
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end">
-                    <DropdownMenuLabel>Filter by</DropdownMenuLabel>
-                    <DropdownMenuSeparator />
-                    <DropdownMenuCheckboxItem checked>
-                      Date
-                    </DropdownMenuCheckboxItem>
-                    <DropdownMenuCheckboxItem>Time</DropdownMenuCheckboxItem>
-                    <DropdownMenuCheckboxItem>
-                      Percentage
-                    </DropdownMenuCheckboxItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </div>
-            </div>
-            <TabsContent value="dsa">
-              <Card x-chunk="dashboard-06-chunk-0">
-                <CardHeader>
-                  <CardTitle>Attendence</CardTitle>
-                  <CardDescription>
-                    Detailed attendence report
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="hidden w-[100px] sm:table-cell">
-                          <span className="sr-only">Image</span>
-                        </TableHead>
-                        <TableHead>Date</TableHead>
-                        <TableHead>Time</TableHead>
-                        <TableHead>Status</TableHead>
-                        <TableHead >Percentage</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="data base">
-              <Card x-chunk="dashboard-06-chunk-0">
-                <CardHeader>
-                  <CardTitle>Attendence</CardTitle>
-                  <CardDescription>
-                    Detailed attendence report
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="hidden w-[100px] sm:table-cell">
-                          <span className="sr-only">Image</span>
-                        </TableHead>
-                        <TableHead>Date</TableHead>
-                        <TableHead>Time</TableHead>
-                        <TableHead>Status</TableHead>
-                        <TableHead >Percentage</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          23-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          22-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          70%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          21-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          85%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="python">
-              <Card x-chunk="dashboard-06-chunk-0">
-                <CardHeader>
-                  <CardTitle>Attendence</CardTitle>
-                  <CardDescription>
-                    Detailed attendence report
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="hidden w-[100px] sm:table-cell">
-                          <span className="sr-only">Image</span>
-                        </TableHead>
-                        <TableHead>Date</TableHead>
-                        <TableHead>Time</TableHead>
-                        <TableHead>Status</TableHead>
-                        <TableHead >Percentage</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          19-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Absent
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          50%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          19-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          60%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          13-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Absent
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          45%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="math">
-              <Card x-chunk="dashboard-06-chunk-0">
-                <CardHeader>
-                  <CardTitle>Attendence</CardTitle>
-                  <CardDescription>
-                    Detailed attendence report
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="hidden w-[100px] sm:table-cell">
-                          <span className="sr-only">Image</span>
-                        </TableHead>
-                        <TableHead>Date</TableHead>
-                        <TableHead>Time</TableHead>
-                        <TableHead>Status</TableHead>
-                        <TableHead >Percentage</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="soft skills">
-              <Card x-chunk="dashboard-06-chunk-0">
-                <CardHeader>
-                  <CardTitle>Attendence</CardTitle>
-                  <CardDescription>
-                    Detailed attendence report
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="hidden w-[100px] sm:table-cell">
-                          <span className="sr-only">Image</span>
-                        </TableHead>
-                        <TableHead>Date</TableHead>
-                        <TableHead>Time</TableHead>
-                        <TableHead>Status</TableHead>
-                        <TableHead >Percentage</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="aptitude">
-              <Card x-chunk="dashboard-06-chunk-0">
-                <CardHeader>
-                  <CardTitle>Continous Internal Evaluation</CardTitle>
-                  <CardDescription>
-                    Detailed att
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="hidden w-[100px] sm:table-cell">
-                          <span className="sr-only">Image</span>
-                        </TableHead>
-                        <TableHead>Date</TableHead>
-                        <TableHead>Time</TableHead>
-                        <TableHead>Status</TableHead>
-                        <TableHead >Percentage</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="hidden sm:table-cell">
-                        </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
-          <div className=" w-1/3 flex flex-row">
           <Tabs className="" defaultValue="dsa">
             <div className="flex items-center">
               <div className="ml-auto flex items-center gap-2">
@@ -1086,9 +326,9 @@ function Dashboard() {
             <TabsContent value="dsa">
               <Card x-chunk="dashboard-06-chunk-0">
                 <CardHeader>
-                  <CardTitle>Continous Internal Evaluation</CardTitle>
+                  <CardTitle>Attendance</CardTitle>
                   <CardDescription>
-                    CIE History
+                    Attendance History
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -1113,13 +353,13 @@ function Dashboard() {
                           DAA
                         </TableCell>
                         <TableCell className="font-medium">
-                          24-04-2023
+                          24-04-2024
                         </TableCell>
                         <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
+                          12:00 pm
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          Present
+                          <Badge className="bg-green-600 bg-opacity-50">Present</Badge>
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
                           80%
@@ -1128,81 +368,97 @@ function Dashboard() {
                       <TableRow>
                         <TableCell className="hidden sm:table-cell">
                         </TableCell>
+                        <TableCell className="hidden sm:table-cell">
+                          DBMS
+                        </TableCell>
                         <TableCell className="font-medium">
-                          24-04-2023
+                          24-04-2024
                         </TableCell>
                         <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
+                          11:00 am
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          Present
+                        <Badge className="bg-green-600 bg-opacity-50">Present</Badge>
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          80%
+                          76%
                         </TableCell>
                       </TableRow>
                       <TableRow>
                         <TableCell className="hidden sm:table-cell">
                         </TableCell>
+                        <TableCell className="hidden sm:table-cell">
+                          SEPM
+                        </TableCell>
                         <TableCell className="font-medium">
-                          24-04-2023
+                          24-04-2024
                         </TableCell>
                         <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
+                          10:00 am
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          Present
+                        <Badge className="bg-green-600 bg-opacity-50">Present</Badge>
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          80%
+                          83%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="hidden sm:table-cell">
+                          DMS
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          23-04-2024
+                        </TableCell>
+                        <TableCell>
+                          03:00 pm
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          <Badge className="bg-red-600 bg-opacity-50">Absent</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          74%
                         </TableCell>
                       </TableRow>
                       <TableRow>
                         <TableCell className="hidden sm:table-cell">
                         </TableCell>
+                        <TableCell className="hidden sm:table-cell">
+                          SEPM
+                        </TableCell>
                         <TableCell className="font-medium">
-                          24-04-2023
+                          23-04-2024
                         </TableCell>
                         <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
+                          02:00 pm
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          Present
+                        <Badge className="bg-red-600 bg-opacity-50">Absent</Badge>
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          80%
+                          76%
                         </TableCell>
                       </TableRow>
                       <TableRow>
                         <TableCell className="hidden sm:table-cell">
                         </TableCell>
-                        <TableCell className="font-medium">
-                          24-04-2023
-                        </TableCell>
-                        <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          Present
-                        </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          80%
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
                         <TableCell className="hidden sm:table-cell">
+                          DBMS
                         </TableCell>
                         <TableCell className="font-medium">
-                          24-04-2023
+                          23-04-2023
                         </TableCell>
                         <TableCell>
-                          <Badge variant="outline">11:00 am</Badge>
+                          01:00 pm
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          Present
+                        <Badge className="bg-green-600 bg-opacity-50">Present</Badge>
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          80%
+                          78%
                         </TableCell>
                       </TableRow>
                     </TableBody>
@@ -1826,6 +1082,788 @@ function Dashboard() {
               </Card>
             </TabsContent>
             </Tabs>
+          
+          <div className=" w-1/3 flex flex-row">
+          <Tabs className="" defaultValue="dsa">
+            <div className="flex items-center">
+              <div className="ml-auto flex items-center gap-2">
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end">
+                    <DropdownMenuLabel>Filter by</DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuCheckboxItem checked>
+                      Date
+                    </DropdownMenuCheckboxItem>
+                    <DropdownMenuCheckboxItem>Time</DropdownMenuCheckboxItem>
+                    <DropdownMenuCheckboxItem>
+                      Percentage
+                    </DropdownMenuCheckboxItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
+            </div>
+            <TabsContent value="dsa">
+              <Card x-chunk="dashboard-06-chunk-0">
+                <CardHeader>
+                  <CardTitle>Continous Internal Evaluation</CardTitle>
+                  <CardDescription>
+                    CIE History
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="  sm:table-cell">
+                          <span className="sr-only">Image</span>
+                        </TableHead>
+                        <TableHead>Subject</TableHead>
+                        <TableHead>Last Update</TableHead>
+                        <TableHead>MSE Marks</TableHead>
+                        <TableHead>LA Marks</TableHead>
+                        <TableHead >Total CIE Marks</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          DAA
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          <Badge variant="outline" className="ml-3">MSE1</Badge>
+                        </TableCell>
+                        <TableCell>
+                          27 / 30
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          25 / 20
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          42 / 50
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="hidden sm:table-cell">
+                          DMS
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          <Badge variant="outline" className="ml-3">MSE1</Badge>
+                        </TableCell>
+                        <TableCell>
+                          30 / 30
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                        15 / 20
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          35 / 50
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="hidden sm:table-cell">
+                          SEPM
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          <Badge variant="outline" className="ml-3">MSE1</Badge>
+                        </TableCell>
+                        <TableCell>
+                          28 / 30
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                        20 / 20
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          48 / 50
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="hidden sm:table-cell">
+                          AEC
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          <Badge variant="outline" className="ml-3">MSE1</Badge>
+                        </TableCell>
+                        <TableCell>
+                          20 / 30
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          19 / 20
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          39 / 50
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="hidden sm:table-cell">
+                          EVS
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          <Badge variant="outline" className="ml-3">MSE1</Badge>
+                        </TableCell>
+                        <TableCell>
+                          28 / 30
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                        16 / 20
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          44 / 50
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="hidden sm:table-cell">
+                          JAVA
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          <Badge variant="outline" className="ml-3">MSE1</Badge>
+                        </TableCell>
+                        <TableCell>
+                          20 / 30
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                        20 / 20
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          40 / 50
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="data base">
+              <Card x-chunk="dashboard-06-chunk-0">
+                <CardHeader>
+                  <CardTitle>Attendence</CardTitle>
+                  <CardDescription>
+                    Detailed attendence report
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="hidden w-[100px] sm:table-cell">
+                          <span className="sr-only">Image</span>
+                        </TableHead>
+                        <TableHead>Date</TableHead>
+                        <TableHead>Time</TableHead>
+                        <TableHead>Status</TableHead>
+                        <TableHead >Percentage</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          23-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          22-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          70%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          21-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          85%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="python">
+              <Card x-chunk="dashboard-06-chunk-0">
+                <CardHeader>
+                  <CardTitle>Attendence</CardTitle>
+                  <CardDescription>
+                    Detailed attendence report
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="hidden w-[100px] sm:table-cell">
+                          <span className="sr-only">Image</span>
+                        </TableHead>
+                        <TableHead>Date</TableHead>
+                        <TableHead>Time</TableHead>
+                        <TableHead>Status</TableHead>
+                        <TableHead >Percentage</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          19-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Absent
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          50%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          19-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          60%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          13-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Absent
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          45%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="math">
+              <Card x-chunk="dashboard-06-chunk-0">
+                <CardHeader>
+                  <CardTitle>Attendence</CardTitle>
+                  <CardDescription>
+                    Detailed attendence report
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="hidden w-[100px] sm:table-cell">
+                          <span className="sr-only">Image</span>
+                        </TableHead>
+                        <TableHead>Date</TableHead>
+                        <TableHead>Time</TableHead>
+                        <TableHead>Status</TableHead>
+                        <TableHead >Percentage</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="soft skills">
+              <Card x-chunk="dashboard-06-chunk-0">
+                <CardHeader>
+                  <CardTitle>Attendence</CardTitle>
+                  <CardDescription>
+                    Detailed attendence report
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="hidden w-[100px] sm:table-cell">
+                          <span className="sr-only">Image</span>
+                        </TableHead>
+                        <TableHead>Date</TableHead>
+                        <TableHead>Time</TableHead>
+                        <TableHead>Status</TableHead>
+                        <TableHead >Percentage</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="aptitude">
+              <Card x-chunk="dashboard-06-chunk-0">
+                <CardHeader>
+                  <CardTitle>Attendence</CardTitle>
+                  <CardDescription>
+                    Detailed attendence report
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="hidden w-[100px] sm:table-cell">
+                          <span className="sr-only">Image</span>
+                        </TableHead>
+                        <TableHead>Date</TableHead>
+                        <TableHead>Time</TableHead>
+                        <TableHead>Status</TableHead>
+                        <TableHead >Percentage</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="hidden sm:table-cell">
+                        </TableCell>
+                        <TableCell className="font-medium">
+                          24-04-2023
+                        </TableCell>
+                        <TableCell>
+                          <Badge variant="outline">11:00 am</Badge>
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          Present
+                        </TableCell>
+                        <TableCell className="hidden md:table-cell">
+                          80%
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            </Tabs>
+           
           </div>
           </div>
         </main>
