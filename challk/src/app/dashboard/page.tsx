@@ -1110,6 +1110,9 @@ function Dashboard() {
                         <TableCell className="hidden sm:table-cell">
                         </TableCell>
                         <TableCell className="font-medium">
+                          DAA
+                        </TableCell>
+                        <TableCell className="font-medium">
                           24-04-2023
                         </TableCell>
                         <TableCell>
