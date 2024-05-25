@@ -1863,7 +1863,6 @@ function Dashboard() {
               </Card>
             </TabsContent>
             </Tabs>
-           
           </div>
           </div>
         </main>
