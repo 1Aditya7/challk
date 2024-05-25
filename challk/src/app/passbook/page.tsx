@@ -13,6 +13,7 @@ CircleUser,
 Grid,
 Home,
 LineChart,
+BookOpenCheck,
 Menu,
 Book,
 Clipboard,
@@ -96,6 +97,13 @@ return (
           >
             <LineChart className="h-4 w-4" />
             Attendance
+          </Link>
+          <Link
+            href="/attendance"
+            className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+          >
+            <BookOpenCheck className="h-4 w-4" />
+            Continous Internal Evaluation
           </Link>
         </nav>
       </div>
@@ -227,30 +235,29 @@ return (
       <div
         className="flex flex-1 justify-items-start items-stretch mt-2 w-150 p-10 " x-chunk="dashboard-02-chunk-1"
       >
-        <h1 className="font-semibold text-xl">Welcome to the Home of NMIT LMS</h1>
+        <h1 className="font-semibold text-3xl">Your Personal <span className="text-primary">Passbook</span></h1>
         <div className="flex flex-col items-center gap-1 text-center">
           <p className="text-sm text-muted-foreground">
           </p>
         </div>
       </div>
-<div className="flex flex-row gap-4 mx-20 color:primary mt-10 items-stretch">
+<div className="flex flex-row gap-4 mx-10 color:primary mt-2 items-stretch">
     <ReactCardFlip isFlipped={flip} flipDirection="vertical">
         <div className="h-100 w-80 ">
             <Card className=" auto-rows-auto">
                     <CardHeader className="text-center">
-                        <CardTitle> College ID</CardTitle>
+                        <CardTitle className="text-primary"> College ID</CardTitle>
                     </CardHeader>
-                    <CardContent className="grid gap-8">
+                    <CardContent>
                     <button onClick={() => setFlip(!flip)} >
-
-                        <div className="bg-white p-6 rounded-lg shadow-lg " >
-                            <img src="https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"/>
+                        <div className="bg-white p-6 r items-center" >
+                            <img src="https://flxt.tmsimg.com/assets/p13923677_n1103251_cc_v9_aa.jpg"/>
                         </div> 
                         </button>                    
                         <div className="rounded-lg border bg-card text-card-foreground shadow p-4 w-full h-full">
                         <div className="flex items-center gap-4">
                         <div className="grid gap-1 h-100">
-                            <p className="text-sm font-medium leading-none"> Name:  Peter Parker</p>
+                            <p className="text-sm font-medium leading-none"> Name:  Sheldon Cooper</p>
                             <p className="text-sm text-muted-foreground truncate w-64">
                             USN: 1NT23CS022
                             </p>
@@ -259,33 +266,32 @@ return (
                             </p>
                             <p className="text-sm text-muted-foreground truncate w-64">
                             DOB: 13/05/2004
-                            </p>
-                                    
+                            </p>         
                         </div>
                         </div>
                         </div>
-                        
-                        
                     </CardContent>
             </Card>
         </div>
         <div className="h-300 w-200">
             <Card className=" auto-rows-auto">
                 <CardHeader className="text-center">
-                    <CardTitle> Library Pass</CardTitle>
+                    <CardTitle className="text-primary"> ID Card</CardTitle>
                 </CardHeader>
                 <CardContent className="grid gap-8">
 
                     <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 ">
                     <div className="flex items-center gap-4">
                     <div className="grid gap-3">
-                    <p className="text-sm font-medium leading-none"> Name: Peter Parker </p> 
-                        <p className="text-sm font-medium leading-none"> Father name: Ben parker </p>
-                        <p className="text-sm font-medium leading-none"> Address: NMIT main gate, BSF campus, Yelahanka, Bangalore </p>
-                        <p className="text-sm font-medium leading-none"> Phone number: 1234567890 </p>
-                        <p className="text-sm font-medium leading-none"> Blood Grouo: AB +ve </p>
-
-
+                    <div className="bg-white p-6 rounded-lg items-center h-[250px] w-[370px]">
+                    <img src="https://flxt.tmsimg.com/assets/p13923677_n1103251_cc_v9_aa.jpg" className="object-contain h-full w-full" />
+                    </div>
+                    <p className="text-sm font-medium leading-none"> Name: Sheldon Cooper </p> 
+                        <p className="text-sm font-medium leading-none"> Father name: George Cooper </p>
+                        <p className="text-sm font-medium leading-none"> Mother name: Mary Cooper </p>
+                        <p className="text-sm font-medium leading-none"> Address: 5501 Grant Ave, Medford, Texas, 88597 </p>
+                        <p className="text-sm font-medium leading-none"> Phone number: +1 2345 67890 </p>
+                        <p className="text-sm font-medium leading-none"> Blood Group: AB +ve </p>
                     </div>
                     </div>
                     </div>
@@ -297,134 +303,129 @@ return (
         </div>    
     </ReactCardFlip>
 
-        
-         <ReactCardFlip isFlipped={flip} flipDirection="vertical">
-            <div className="h-100 w-80">
-                <Card className=" auto-rows-auto">
+    <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+        <div className="h-100 w-80 ">
+            <Card className=" auto-rows-auto">
                     <CardHeader className="text-center">
-                        <CardTitle> Bus Pass</CardTitle>
+                        <CardTitle className="text-primary"> Vehicle Pass </CardTitle>
                     </CardHeader>
-                    <CardContent className="grid gap-8">
+                    <CardContent>
+                    <button onClick={() => setFlip(!flip)} >
+                    <div className="bg-white p-6 r items-center" style={{ height: '345px', width: '270px' }}>
+                        <img src="https://i.pinimg.com/736x/e0/7d/be/e07dbe97a6ed2b601f2f1f87e4b913bf.jpg" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                    </div>
+
+                        </button>                    
+                        <div className="rounded-lg border bg-card text-card-foreground shadow p-4 w-full h-full">
+                        <div className="flex items-center gap-4">
+                        <div className="grid gap-1 h-100">
+                            <p className="text-sm font-medium leading-none"> Vehicle:  Bat Mobile</p>
+                            <p className="text-sm text-muted-foreground truncate w-64">
+                            Vehicle Number: DC 1939
+                            </p>
+                            <p className="text-sm text-muted-foreground truncate w-64">
+                            Type: 4 Wheeler
+                            </p>
+                            <p className="text-sm text-muted-foreground truncate w-64">
+                            Access Type: Student Access
+                            </p>         
+                        </div>
+                        </div>
+                        </div>
+                    </CardContent>
+            </Card>
+        </div>
+        <div className="h-300 w-200">
+            <Card className=" auto-rows-auto">
+                <CardHeader className="text-center">
+                    <CardTitle className="text-primary"> Vehicle Pass</CardTitle>
+                </CardHeader>
+                <CardContent className="grid gap-8">
+
+                    <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 ">
+                    <div className="flex items-center gap-4">
+                    <div className="grid gap-3">
+                    <div className="bg-white p-6 rounded-lg items-center h-[250px] w-[370px]">
+                    <img src="https://i.pinimg.com/736x/e0/7d/be/e07dbe97a6ed2b601f2f1f87e4b913bf.jpg" className="object-contain h-full w-full" />
+                    </div>
+                    <p className="text-sm font-medium leading-none"> Vehicle: Bat Mobile </p> 
+                        <p className="text-sm font-medium leading-none"> Pass Validity: 26/05/2025  </p>
+                        <p className="text-sm font-medium leading-none"> Owner Name: Sheldon Cooper </p>
+                        <p className="text-sm font-medium leading-none"> Address: 5501 Grant Ave, Medford, Texas, 88597 </p>
+                        <p className="text-sm font-medium leading-none"> Phone number: +1 2345 67890 </p>
+                        <p className="text-sm font-medium leading-none"> Blood Group: AB +ve </p>
+                    </div>
+                    </div>
+                    </div>
                     <button onClick={() => setFlip(!flip)}>
-                        <div className="bg-white p-6 rounded-lg shadow-lg " >
-                            <img src="https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"/>
-                        </div>  
-                        </button>                   
-                        <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 ">
-                        <div className="flex items-center gap-4">
-                        <div className="grid gap-1">
-                            <p className="text-sm font-medium leading-none"> Name:  Peter Parker</p>
-                            <p className="text-sm text-muted-foreground truncate w-64">
-                        Route: 18
-                            </p>
-                            <p className="text-sm text-muted-foreground truncate w-64">
-                            Something
-                            </p>
-                            <p className="text-sm text-muted-foreground truncate w-64">
-                            SOmething
-                            </p>
-                            
-                        </div>
-                        
-                        </div>
-                        
-                        </div>
-                        
-                        
-                    
-                    </CardContent>
-                </Card>
-            </div>
-            <div className = "h-300 w-200">    
-                <Card className=" auto-rows-auto">
-                    <CardHeader className="text-center">
-                        <CardTitle> Bus Pass</CardTitle>
-                    </CardHeader>
-                    <CardContent className="grid gap-8">
+                        Flip
+                    </button>
+                </CardContent>
+            </Card>
+        </div>    
+    </ReactCardFlip>
 
-                        <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 ">
-                        <div className="flex items-center gap-4">
-                        <div className="grid gap-3">
-                        <p className="text-sm font-medium leading-none"> Name: Peter Parker </p> 
-                            <p className="text-sm font-medium leading-none"> Address: NMIT main gate, BSF campus, Yelahanka, Bangalore </p>
-                            <p className="text-sm font-medium leading-none"> Stop No : 20 </p>
-                            <p className="text-sm font-medium leading-none"> Stop Location: Drdo bus stop </p>
-                            <p className="text-sm font-medium leading-none"> Phone number: 1234567890 </p>
-                            <p className="text-sm font-medium leading-none"> Blood Grouo: AB +ve </p>
-                            <p className="text-sm font-medium leading-none"> Fee: Paid </p>
-                            
-                            
-
-                        </div>
-                        </div>
-                        </div>
-                        <button onClick={() => setFlip(!flip)}>
-                            Flip
-                        </button>
-                    </CardContent>
-                </Card>
-            </div>    
-        </ReactCardFlip>
-        <ReactCardFlip isFlipped={flip} flipDirection="vertical">
-            <div className="h-100 w-80">
-                <Card className=" auto-rows-auto">
+    <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+        <div className="h-100 w-80 ">
+            <Card className=" auto-rows-auto">
                     <CardHeader className="text-center">
-                        <CardTitle> Library Pass</CardTitle>
+                        <CardTitle className="text-primary"> Library Pass </CardTitle>
                     </CardHeader>
-                    <CardContent className="grid gap-8">
-                        <button onClick={() => setFlip(!flip)}>
-                            <div className="bg-white p-6 rounded-lg shadow-lg " >
-                                <img src="https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"/>
-                            </div>   
-                        </button>                  
-                        <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 ">
+                    <CardContent>
+                    <button onClick={() => setFlip(!flip)} >
+                    <div className="bg-white p-6 r items-center" style={{ height: '345px', width: '270px' }}>
+                        <img src="https://images.shiksha.com/mediadata/images/1675333508phptKq8N5.jpeg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} />
+                    </div>
+
+                        </button>                    
+                        <div className="rounded-lg border bg-card text-card-foreground shadow p-4 w-full h-full">
                         <div className="flex items-center gap-4">
-                        <div className="grid gap-1">
-                            <p className="text-sm font-medium leading-none"> Name:  Peter Parker</p>
+                        <div className="grid gap-1 h-100">
+                            <p className="text-sm font-medium leading-none"> Name: Aditya Verghese</p>
                             <p className="text-sm text-muted-foreground truncate w-64">
                             USN: 1NT23CS022
                             </p>
                             <p className="text-sm text-muted-foreground truncate w-64">
-                        Book issued: YES
+                            Library Subscription: Standard
                             </p>
                             <p className="text-sm text-muted-foreground truncate w-64">
-                        Book name: Harry potters and the chamber of secret 
-                            </p>
+                            Books Issued Currently: 2
+                            </p>         
                         </div>
-                        
                         </div>
-                        
                         </div>
                     </CardContent>
-                </Card>
-            </div>
-            <div className="h-300 w-200">
-                <Card className=" auto-rows-auto">
-                    <CardHeader className="text-center">
-                        <CardTitle> Library Pass</CardTitle>
-                    </CardHeader>
-                    <CardContent className="grid gap-8">
+            </Card>
+        </div>
+        <div className="h-300 w-200">
+            <Card className=" auto-rows-auto">
+                <CardHeader className="text-center">
+                    <CardTitle className="text-primary">Library Pass</CardTitle>
+                </CardHeader>
+                <CardContent className="grid gap-8">
 
-                        <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 ">
-                        <div className="flex items-center gap-4">
-                        <div className="grid gap-3">
-                        <p className="text-sm font-medium leading-none"> Last book returned: Yes </p>
-                        <p className="text-sm font-medium leading-none"> Late return fine: Rs 100 </p>
-                        <p className="text-sm font-medium leading-none"> Unreturned books: 3 </p>
-                        <p className="text-sm font-medium leading-none"> Total fine: Rs 2100 </p>
-                        
-                            
-
-                        </div>
-                        </div>
-                        </div>
-                        <button onClick={() => setFlip(!flip)}>
-                            Flip
-                        </button>
-                    </CardContent>
-                </Card>
-            </div>    
-        </ReactCardFlip>
+                    <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 ">
+                    <div className="flex items-center gap-4">
+                    <div className="grid gap-3">
+                    <div className="bg-white p-6 rounded-lg items-center h-[250px] w-[370px]">
+                    <img src="https://images.shiksha.com/mediadata/images/1675333508phptKq8N5.jpeg" className="object-contain h-full w-full" />
+                    </div>
+                    <p className="text-sm font-medium leading-none"> Name: Aditya Verghese </p> 
+                        <p className="text-sm font-medium leading-none"> Total Books Issued: 32 </p>
+                        <p className="text-sm font-medium leading-none"> Student Reg No: 26627 </p>
+                        <p className="text-sm font-medium leading-none"> Pass Validity: 26/5/2025</p>
+                        <p className="text-sm font-medium leading-none"> Contact Number: +1 2345 6789</p>
+                        <p className="text-sm font-medium leading-none">  College Email: aditya@nmit.ac.in</p>
+                    </div>
+                    </div>
+                    </div>
+                    <button onClick={() => setFlip(!flip)}>
+                        Flip
+                    </button>
+                </CardContent>
+            </Card>
+        </div>    
+    </ReactCardFlip>
     </div>
 </main>
     </div>
