@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from 'next/link';
 import React from 'react';
 import {
   CircleUser,
@@ -11,10 +11,10 @@ import {
   Search,
   ShoppingCart,
   Users,
-} from "lucide-react"
+} from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
@@ -22,7 +22,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from '@/components/ui/card';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -30,11 +30,17 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+} from '@/components/ui/dropdown-menu';
+import { Input } from '@/components/ui/input';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 function Dashboard() {
+  const courses = [
+    { id: '22CS41A', name: 'Design and Analysis of Algorithms' },
+    { id: '22CS42A', name: 'Software Engineering and Project Management' },
+    { id: '22CS44A', name: 'Database Management System' },
+  ];
+
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <div className="hidden border-r bg-muted/40 md:block">
@@ -50,38 +56,23 @@ function Dashboard() {
           </div>
           <div className="flex-1">
             <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
-              <Link
-                href="/dashboard"
-                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-              >
+              <Link href="/dashboard" className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary">
                 <Grid className="h-4 w-4" />
                 Dashboard
               </Link>
-              <Link
-                href="/home"
-                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-              >
+              <Link href="/home" className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary">
                 <Home className="h-4 w-4" />
                 LMS Home
               </Link>
-              <Link
-                href="#"
-                className="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary"
-              >
+              <Link href="#" className="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary">
                 <Book className="h-4 w-4" />
                 Courses
               </Link>
-              <Link
-                href="/passbook"
-                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-              >
+              <Link href="/passbook" className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary">
                 <Users className="h-4 w-4" />
                 Passbook
               </Link>
-              <Link
-                href="#"
-                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-              >
+              <Link href="#" className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary">
                 <LineChart className="h-4 w-4" />
                 Attendance
               </Link>
@@ -108,59 +99,37 @@ function Dashboard() {
         <header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
           <Sheet>
             <SheetTrigger asChild>
-              <Button
-                variant="outline"
-                size="icon"
-                className="shrink-0 md:hidden"
-              >
+              <Button variant="outline" size="icon" className="shrink-0 md:hidden">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="flex flex-col">
               <nav className="grid gap-2 text-lg font-medium">
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-lg font-semibold"
-                >
+                <Link href="#" className="flex items-center gap-2 text-lg font-semibold">
                   <Clipboard className="h-6 w-6" />
                   <span className="sr-only">Acme Inc</span>
                 </Link>
-                <Link
-                  href="#"
-                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                >
+                <Link href="#" className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
                   <Grid className="h-5 w-5" />
                   Dashboard
                 </Link>
-                <Link
-                  href="#"
-                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"
-                >
+                <Link href="#" className="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground">
                   <ShoppingCart className="h-5 w-5" />
                   LMS HOME
                   <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
                     6
                   </Badge>
                 </Link>
-                <Link
-                  href="#"
-                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                >
+                <Link href="#" className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
                   <Book className="h-5 w-5" />
                   Courses
                 </Link>
-                <Link
-                  href="#"
-                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                >
+                <Link href="#" className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
                   <Users className="h-5 w-5" />
                   Passbook
                 </Link>
-                <Link
-                  href="#"
-                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                >
+                <Link href="#" className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
                   <LineChart className="h-5 w-5" />
                   Attendance
                 </Link>
@@ -186,11 +155,7 @@ function Dashboard() {
             <form>
               <div className="relative">
                 <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-                <Input
-                  type="search"
-                  placeholder="Search Courses"
-                  className="w-full appearance-none bg-background pl-8 shadow-none md:w-2/3 lg:w-1/3"
-                />
+                <Input type="search" placeholder="Search Courses" className="w-full appearance-none bg-background pl-8 shadow-none md:w-2/3 lg:w-1/3" />
               </div>
             </form>
           </div>
@@ -217,76 +182,26 @@ function Dashboard() {
             <Button className="absolute top-20 right-20 mt-0.5">Enroll Course</Button>
           </div>
           <div className="grid grid-cols-3 gap-4 mt-4">
-                    <Card>
-                      <CardHeader className="pb-3">
-                          <CardTitle>Data Structures and Algorithms</CardTitle>
-                          <CardDescription className="max-w-lg text-balance leading-relaxed">
-                          Subject code:001
-                          </CardDescription>
-                      </CardHeader>
-                      <CardFooter>
-                          <Button>View Course</Button>
-                      </CardFooter>
-                    </Card>
-                    <Card>
-                      <CardHeader className="pb-3">
-                          <CardTitle>Data base management systems</CardTitle>
-                          <CardDescription className="max-w-lg text-balance leading-relaxed">
-                          Subject code:002
-                          </CardDescription>
-                      </CardHeader>
-                      <CardFooter>
-                          <Button>View course</Button>
-                      </CardFooter>
-                    </Card>
-                    <Card>
-                      <CardHeader className="pb-3">
-                          <CardTitle>Python</CardTitle>
-                          <CardDescription className="max-w-lg text-balance leading-relaxed">
-                          Subject code:003
-                          </CardDescription>
-                      </CardHeader>
-                      <CardFooter>
-                          <Button>View course</Button>
-                      </CardFooter>
-                    </Card>
-                    <Card>
-                      <CardHeader className="pb-3">
-                          <CardTitle>Mathematics</CardTitle>
-                          <CardDescription className="max-w-lg text-balance leading-relaxed">
-                          Subject code:004
-                          </CardDescription>
-                      </CardHeader>
-                      <CardFooter>
-                          <Button>View course</Button>
-                      </CardFooter>
-                    </Card>
-                    <Card>
-                      <CardHeader className="pb-3">
-                          <CardTitle>Soft skills</CardTitle>
-                          <CardDescription className="max-w-lg text-balance leading-relaxed">
-                          Subject code:005
-                          </CardDescription>
-                      </CardHeader>
-                      <CardFooter>
-                          <Button>View course</Button>
-                      </CardFooter>
-                    </Card>
-                    <Card>
-                      <CardHeader className="pb-3">
-                          <CardTitle>Aptitude Training</CardTitle>
-                          <CardDescription className="max-w-lg text-balance leading-relaxed">
-                          Subject code:006
-                          </CardDescription>
-                      </CardHeader>
-                      <CardFooter>
-                          <Button>View course</Button>
-                      </CardFooter>
-                    </Card>
-                </div>
+            {courses.map(course => (
+              <Card key={course.id}>
+                <CardHeader className="pb-3">
+                  <CardTitle className='leading-normal'>{course.name}</CardTitle>
+                  <CardDescription className="max-w-lg text-balance leading-relaxed">
+                    Subject code: {course.id}
+                  </CardDescription>
+                </CardHeader>
+                <CardFooter>
+                  <Link href={`/courses/${course.id}`} passHref>
+                    <Button as="a" id={`course-link-${course.id}`}>View course</Button>
+                  </Link>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
         </main>
       </div>
     </div>
-  )
+  );
 }
+
 export default Dashboard;
