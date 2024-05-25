@@ -65,7 +65,7 @@ function Dashboard() {
                 className="flex items-center gap-3 rounded-lg px-3 py-2 bg-secondary text-primary transition-all hover:text-primary"
               >
                 <Home className="h-4 w-4" />
-                LMS HOME
+                LMS Home
               </Link>
               <Link
                 href="/courses"
@@ -89,11 +89,11 @@ function Dashboard() {
                 Attendance
               </Link>
               <Link
-                  href="#"
+                  href="/cie"
                   className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
                 >
                   <BookOpenCheck className="h-4 w-4" />
-                  CIE
+                  Continous Internal Evaluation
                 </Link>
             </nav>
           </div>
@@ -219,14 +219,14 @@ function Dashboard() {
           <div
             className="flex flex-1 justify-items-start items-stretch mt-2" x-chunk="dashboard-02-chunk-1"
           >
-            <h1 className="font-semibold text-xl">Welcome to the Home of NMIT LMS</h1>
+            <h1 className="font-bold text-3xl items-center justify-center">Welcome to the Home of <span className="text-primary">NMIT LMS</span></h1>
             <div className="flex flex-col items-center gap-1 text-center">
               <p className="text-sm text-muted-foreground">
               </p>
             </div>
           </div>
-        <div className="flex flex-row gap-4 mx-10  mt-2 items-stretch">
-        <Card className=" auto-rows-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <Card>
                 <CardHeader>
                     <CardTitle>College Annoucements</CardTitle>
                 </CardHeader>
@@ -239,7 +239,7 @@ function Dashboard() {
                       </Avatar>
                     <div className="grid gap-1">
                         <p className="text-sm font-medium leading-none">Akshaye Aaron Azariah (Dept. CSE)</p>
-                        <p className="text-sm text-muted-foreground truncate w-64">
+                        <p className="text-sm text-muted-foreground truncate w-128">
                         Reminder: There will be a mandatory meeting for all faculty members of CSE Dept. on 12/12/24          
                         </p>
                     </div>
@@ -252,9 +252,9 @@ function Dashboard() {
                         <AvatarFallback>AP</AvatarFallback>
                     </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none"> Aditya Parthiban (Dept. EEE)</p>
-                        <p className="text-sm text-muted-foreground truncate w-64">
-                        ReReminder: There will be a mandatory meeting for all faculty members of EEE Dept. on 12/12/24
+                        <p className="text-sm font-medium leading-none"> Aditya Parthiban (Dept. CSE)</p>
+                        <p className="text-sm text-muted-foreground truncate w-128">
+                        ReReminder: There will be a mandatory meeting for all faculty members of CSE Dept. on 12/12/24
                         </p>
                     </div>
                     </div>
@@ -267,7 +267,7 @@ function Dashboard() {
                     </Avatar>
                     <div className="grid gap-1">
                         <p className="text-sm font-medium leading-none">Aditva Verghese (Dept. AI&DS)</p>
-                        <p className="text-sm text-muted-foreground truncate w-64">
+                        <p className="text-sm text-muted-foreground truncate w-128">
                         Requesting all departmental faculty to complete CO attainment.
                         </p>
                     </div>
@@ -276,7 +276,7 @@ function Dashboard() {
                     <Button variant="outline" className="hover:bg-primary">View All</Button>
                 </CardContent>
             </Card>
-            <Card className=" auto-rows-auto mx-20">
+            <Card>
                 <CardHeader>
                     <CardTitle>Department Annoucements</CardTitle>
                 </CardHeader>
@@ -289,7 +289,7 @@ function Dashboard() {
                       </Avatar>
                     <div className="grid gap-1">
                         <p className="text-sm font-medium leading-none">Akshaye Aaron Azariah (Dept. CSE)</p>
-                        <p className="text-sm text-muted-foreground truncate w-64">
+                        <p className="text-sm text-muted-foreground truncate w-128">
                         Reminder: There will be a mandatory meeting for all faculty members of CSE Dept. on 12/12/24          
                         </p>
                     </div>
@@ -302,9 +302,9 @@ function Dashboard() {
                         <AvatarFallback>AP</AvatarFallback>
                     </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none"> Aditya Parthiban (Dept. EEE)</p>
-                        <p className="text-sm text-muted-foreground truncate w-64">
-                        ReReminder: There will be a mandatory meeting for all faculty members of EEE Dept. on 12/12/24
+                        <p className="text-sm font-medium leading-none"> Aditya Parthiban (Dept. CSE)</p>
+                        <p className="text-sm text-muted-foreground truncate w-128">
+                        ReReminder: There will be a mandatory meeting for all faculty members of CSE Dept. on 12/12/24
                         </p>
                     </div>
                     </div>
@@ -317,7 +317,7 @@ function Dashboard() {
                     </Avatar>
                     <div className="grid gap-1">
                         <p className="text-sm font-medium leading-none">Aditva Verghese (Dept. AI&DS)</p>
-                        <p className="text-sm text-muted-foreground truncate w-64">
+                        <p className="text-sm text-muted-foreground truncate w-128">
                         Requesting all departmental faculty to complete CO attainment.
                         </p>
                     </div>
@@ -326,7 +326,7 @@ function Dashboard() {
                     <Button variant="outline" className="hover:bg-primary">View All</Button>
                 </CardContent>
             </Card>
-            <Card className=" auto-rows-auto mr-12">
+            <Card>
                 <CardHeader>
                     <CardTitle>Class Annoucements</CardTitle>
                 </CardHeader>
@@ -339,7 +339,7 @@ function Dashboard() {
                       </Avatar>
                     <div className="grid gap-1">
                         <p className="text-sm font-medium leading-none">Akshaye Aaron Azariah (Dept. CSE)</p>
-                        <p className="text-sm text-muted-foreground truncate w-64">
+                        <p className="text-sm text-muted-foreground truncate w-128">
                         Reminder: There will be a mandatory meeting for all faculty members of CSE Dept. on 12/12/24          
                         </p>
                     </div>
@@ -352,9 +352,9 @@ function Dashboard() {
                         <AvatarFallback>AP</AvatarFallback>
                     </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none"> Aditya Parthiban (Dept. EEE)</p>
-                        <p className="text-sm text-muted-foreground truncate w-64">
-                        ReReminder: There will be a mandatory meeting for all faculty members of EEE Dept. on 12/12/24
+                        <p className="text-sm font-medium leading-none"> Aditya Parthiban (Dept. CSE)</p>
+                        <p className="text-sm text-muted-foreground truncate w-128">
+                        ReReminder: There will be a mandatory meeting for all faculty members of CSE Dept. on 12/12/24
                         </p>
                     </div>
                     </div>
@@ -367,7 +367,7 @@ function Dashboard() {
                     </Avatar>
                     <div className="grid gap-1">
                         <p className="text-sm font-medium leading-none">Aditva Verghese (Dept. AI&DS)</p>
-                        <p className="text-sm text-muted-foreground truncate w-64">
+                        <p className="text-sm text-muted-foreground truncate w-128">
                         Requesting all departmental faculty to complete CO attainment.
                         </p>
                     </div>
@@ -377,73 +377,132 @@ function Dashboard() {
                 </CardContent>
             </Card>
         </div>
-        <div className="grid grid-cols-3 gap-4 mt-2">
-  <Card className="w-80 h-40 ml-20">
+
+        <div className="grid grid-cols-1 gap-4 mt-2">
+        <h1 className="font-bold text-2xl">Browse Courses for the Academic Year 2023 - 2024</h1>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <Card>
     <CardHeader className="pb-3">
-      <CardTitle>Data Structures and Algorithms</CardTitle>
+      <CardTitle>Aeronuatical Engineering</CardTitle>
       <CardDescription className="max-w-lg text-balance leading-relaxed">
-        Subject code:001
+        All courses for B.E in Aeronuatical Engineering, semesters one to eight
       </CardDescription>
     </CardHeader>
     <CardFooter>
-      <Button className="mt-auto">View Course</Button>
+      <Button className="mt-auto">View Courses</Button>
     </CardFooter>
   </Card>
-  <Card className="w-80 h-40 ml-10">
+  <Card>
     <CardHeader className="pb-3">
-      <CardTitle>Data base management systems</CardTitle>
+      <CardTitle>Artificial Intelligence & Data Science</CardTitle>
       <CardDescription className="max-w-lg text-balance leading-relaxed">
-        Subject code:002
+        All courses for B.E in AI & DS, semesters one to eight
       </CardDescription>
     </CardHeader>
     <CardFooter>
-      <Button className="mt-auto">View Course</Button>
+      <Button className="mt-auto">View Courses</Button>
     </CardFooter>
   </Card>
-  <Card className="w-80 h-40">
+  <Card>
     <CardHeader className="pb-3">
-      <CardTitle>Python</CardTitle>
+      <CardTitle>Artifical Intelligence & Machine Learning</CardTitle>
       <CardDescription className="max-w-lg text-balance leading-relaxed">
-        Subject code:003
+        All courses for B.E in AI & ML, semesters one to eight
       </CardDescription>
     </CardHeader>
     <CardFooter>
-      <Button className="mt-auto">View Course</Button>
+      <Button className="mt-auto">View Courses</Button>
     </CardFooter>
   </Card>
-  <Card className="w-80 h-40 ml-20">
+  <Card>
     <CardHeader className="pb-3">
-      <CardTitle>Mathematics</CardTitle>
+      <CardTitle>Civil Engineering</CardTitle>
       <CardDescription className="max-w-lg text-balance leading-relaxed">
-        Subject code:004
+        All courses for B.E in Civil Engineering, semesters one to eight
       </CardDescription>
     </CardHeader>
     <CardFooter>
-      <Button className="mt-auto">View Course</Button>
+      <Button className="mt-auto">View Courses</Button>
     </CardFooter>
   </Card>
-  <Card className="w-80 h-40 ml-10">
+  <Card>
     <CardHeader className="pb-3">
-      <CardTitle>Soft skills</CardTitle>
+      <CardTitle>Computer Science & Business Systems</CardTitle>
       <CardDescription className="max-w-lg text-balance leading-relaxed">
-        Subject code:005
+        All courses for B.E in CS & BS, semesters one to eight
       </CardDescription>
     </CardHeader>
     <CardFooter>
-      <Button className="mt-auto">View Course</Button>
+      <Button className="mt-auto">View Courses</Button>
     </CardFooter>
   </Card>
-  <Card className="w-80 h-40 ">
+  <Card>
     <CardHeader className="pb-3">
-      <CardTitle>Aptitude Training</CardTitle>
+      <CardTitle>Computer Science & Engineering</CardTitle>
       <CardDescription className="max-w-lg text-balance leading-relaxed">
-        Subject code:006
+        All courses for B.E in CS & E, semesters one to eight
       </CardDescription>
     </CardHeader>
     <CardFooter>
-      <Button className="mt-auto">View Course</Button>
+      <Button className="mt-auto">View Courses</Button>
     </CardFooter>
   </Card>
+  <Card>
+    <CardHeader className="pb-3">
+      <CardTitle>Electrical & Electronics Engineering</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        All courses for B.E in EEE, semesters one to eight
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Courses</Button>
+    </CardFooter>
+  </Card>
+  <Card>
+    <CardHeader className="pb-3">
+      <CardTitle>Electronics & Communication Engineering</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        All courses for B.E in ECE, semesters one to eight
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Courses</Button>
+    </CardFooter>
+  </Card>
+  <Card>
+    <CardHeader className="pb-3">
+      <CardTitle>Electronics Engineering (VLSI)</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        All courses for B.E in VLSI, semesters one to eight
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Courses</Button>
+    </CardFooter>
+  </Card>
+  <Card>
+    <CardHeader className="pb-3">
+      <CardTitle>Information Science & Engineering</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        All courses for B.E in ISE, semesters one to eight
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Courses</Button>
+    </CardFooter>
+  </Card>
+  <Card>
+    <CardHeader className="pb-3">
+      <CardTitle>Mechanical Engineering</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        All courses for B.E in Mechanical Engineering, semesters one to eight
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Courses</Button>
+    </CardFooter>
+  </Card>
+  </div>
 </div>
 
     </main>
