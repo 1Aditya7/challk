@@ -226,220 +226,155 @@ function Dashboard() {
               </p>
             </div>
           </div>
-        <div className="flex flex-col gap-4 items-stretch">
-            <Card className=" auto-rows-auto">
+        <div className="flex flex-row gap-4 mx-20  mt-10 items-stretch">
+        <Card className=" auto-rows-auto">
                 <CardHeader>
                     <CardTitle>College Annoucements</CardTitle>
                 </CardHeader>
                 <CardContent className="grid gap-8">
+                <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 hover:border-primary hover:cursor-pointer">
                     <div className="flex items-center gap-4">
-                    <Avatar className="hidden h-9 w-9 sm:flex">
-                        <AvatarImage src="/avatars/01.png" alt="Avatar" />
-                        <AvatarFallback>DC</AvatarFallback>
-                    </Avatar>
-                    <div className="grid gap-2">
-                        <p className="text-sm font-medium leading-none">Dr. Computer Science</p>
-                        <p className="ml-auto mr-10 text-sm text-muted-foreground">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, alias aspernatur? 
-                        Optio corrupti, quisquam aliquid laborum saepe voluptatem. 
-                        Nesciunt sed iste corporis officiis, 
-                        illum ratione veniam temporibus? Accusantium, vitae itaque.
+                      <Avatar className="hidden h-9 w-9 sm:flex">
+                          <AvatarImage src="/avatars/01.png" alt="Avatar" />
+                          <AvatarFallback>AA</AvatarFallback>
+                      </Avatar>
+                    <div className="grid gap-1">
+                        <p className="text-sm font-medium leading-none">Akshaye Aaron Azariah (Dept. CSE)</p>
+                        <p className="text-sm text-muted-foreground truncate w-64">
+                        Reminder: There will be a mandatory meeting for all faculty members of CSE Dept. on 12/12/24          
                         </p>
                     </div>
                     </div>
-                    <div className="ml-12 mb-2 font-medium text-sm text-primary text-left">View Annoucement</div>
+                    </div>
+                    <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 hover:border-primary hover:cursor-pointer">
                     <div className="flex items-center gap-4">
                     <Avatar className="hidden h-9 w-9 sm:flex">
                         <AvatarImage src="/avatars/02.png" alt="Avatar" />
-                        <AvatarFallback>JL</AvatarFallback>
+                        <AvatarFallback>AP</AvatarFallback>
                     </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Jackson Lee</p>
-                        <p className="text-sm text-muted-foreground">
-                        jackson.lee@email.com
+                        <p className="text-sm font-medium leading-none"> Aditya Parthiban (Dept. EEE)</p>
+                        <p className="text-sm text-muted-foreground truncate w-64">
+                        ReReminder: There will be a mandatory meeting for all faculty members of EEE Dept. on 12/12/24
                         </p>
                     </div>
-                    <div className="ml-auto font-medium">+$39.00</div>
                     </div>
+                    </div>
+                    <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 hover:border-primary hover:cursor-pointer">
                     <div className="flex items-center gap-4">
                     <Avatar className="hidden h-9 w-9 sm:flex">
                         <AvatarImage src="/avatars/03.png" alt="Avatar" />
-                        <AvatarFallback>IN</AvatarFallback>
+                        <AvatarFallback>AV</AvatarFallback>
                     </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Isabella Nguyen</p>
-                        <p className="text-sm text-muted-foreground">
-                        isabella.nguyen@email.com
+                        <p className="text-sm font-medium leading-none">Aditva Verghese (Dept. AI&DS)</p>
+                        <p className="text-sm text-muted-foreground truncate w-64">
+                        Requesting all departmental faculty to complete CO attainment.
                         </p>
                     </div>
-                    <div className="ml-auto font-medium">+$299.00</div>
                     </div>
-                    <div className="flex items-center gap-4">
-                    <Avatar className="hidden h-9 w-9 sm:flex">
-                        <AvatarImage src="/avatars/04.png" alt="Avatar" />
-                        <AvatarFallback>WK</AvatarFallback>
-                    </Avatar>
-                    <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">William Kim</p>
-                        <p className="text-sm text-muted-foreground">will@email.com</p>
                     </div>
-                    <div className="ml-auto font-medium">+$99.00</div>
-                    </div>
-                    <div className="flex items-center gap-4">
-                    <Avatar className="hidden h-9 w-9 sm:flex">
-                        <AvatarImage src="/avatars/05.png" alt="Avatar" />
-                        <AvatarFallback>SD</AvatarFallback>
-                    </Avatar>
-                    <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Sofia Davis</p>
-                        <p className="text-sm text-muted-foreground">
-                        sofia.davis@email.com
-                        </p>
-                    </div>
-                    <div className="ml-auto font-medium">+$39.00</div>
-                    </div>
+                    <Button variant="outline" className="hover:bg-primary">View All</Button>
                 </CardContent>
             </Card>
-            <Card className=" auto-rows-auto">
+            <Card className=" auto-rows-auto mx-20">
                 <CardHeader>
                     <CardTitle>Department Annoucements</CardTitle>
                 </CardHeader>
                 <CardContent className="grid gap-8">
+                <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 hover:border-primary hover:cursor-pointer">
                     <div className="flex items-center gap-4">
-                    <Avatar className="hidden h-9 w-9 sm:flex">
-                        <AvatarImage src="/avatars/01.png" alt="Avatar" />
-                        <AvatarFallback>OM</AvatarFallback>
-                    </Avatar>
+                      <Avatar className="hidden h-9 w-9 sm:flex">
+                          <AvatarImage src="/avatars/01.png" alt="Avatar" />
+                          <AvatarFallback>AA</AvatarFallback>
+                      </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Dr. Computer Science</p>
-                        <p className="text-sm text-muted-foreground">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat non doloremque,
-                        nulla enim adipisci mollitia distinctio deleniti tenetur
+                        <p className="text-sm font-medium leading-none">Akshaye Aaron Azariah (Dept. CSE)</p>
+                        <p className="text-sm text-muted-foreground truncate w-64">
+                        Reminder: There will be a mandatory meeting for all faculty members of CSE Dept. on 12/12/24          
                         </p>
                     </div>
-                    <div className="ml-auto font-medium">+$1,999.00</div>
                     </div>
+                    </div>
+                    <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 hover:border-primary hover:cursor-pointer">
                     <div className="flex items-center gap-4">
                     <Avatar className="hidden h-9 w-9 sm:flex">
                         <AvatarImage src="/avatars/02.png" alt="Avatar" />
-                        <AvatarFallback>JL</AvatarFallback>
+                        <AvatarFallback>AP</AvatarFallback>
                     </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Jackson Lee</p>
-                        <p className="text-sm text-muted-foreground">
-                        jackson.lee@email.com
+                        <p className="text-sm font-medium leading-none"> Aditya Parthiban (Dept. EEE)</p>
+                        <p className="text-sm text-muted-foreground truncate w-64">
+                        ReReminder: There will be a mandatory meeting for all faculty members of EEE Dept. on 12/12/24
                         </p>
                     </div>
-                    <div className="ml-auto font-medium">+$39.00</div>
                     </div>
+                    </div>
+                    <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 hover:border-primary hover:cursor-pointer">
                     <div className="flex items-center gap-4">
                     <Avatar className="hidden h-9 w-9 sm:flex">
                         <AvatarImage src="/avatars/03.png" alt="Avatar" />
-                        <AvatarFallback>IN</AvatarFallback>
+                        <AvatarFallback>AV</AvatarFallback>
                     </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Isabella Nguyen</p>
-                        <p className="text-sm text-muted-foreground">
-                        isabella.nguyen@email.com
+                        <p className="text-sm font-medium leading-none">Aditva Verghese (Dept. AI&DS)</p>
+                        <p className="text-sm text-muted-foreground truncate w-64">
+                        Requesting all departmental faculty to complete CO attainment.
                         </p>
                     </div>
-                    <div className="ml-auto font-medium">+$299.00</div>
                     </div>
-                    <div className="flex items-center gap-4">
-                    <Avatar className="hidden h-9 w-9 sm:flex">
-                        <AvatarImage src="/avatars/04.png" alt="Avatar" />
-                        <AvatarFallback>WK</AvatarFallback>
-                    </Avatar>
-                    <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">William Kim</p>
-                        <p className="text-sm text-muted-foreground">will@email.com</p>
                     </div>
-                    <div className="ml-auto font-medium">+$99.00</div>
-                    </div>
-                    <div className="flex items-center gap-4">
-                    <Avatar className="hidden h-9 w-9 sm:flex">
-                        <AvatarImage src="/avatars/05.png" alt="Avatar" />
-                        <AvatarFallback>SD</AvatarFallback>
-                    </Avatar>
-                    <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Sofia Davis</p>
-                        <p className="text-sm text-muted-foreground">
-                        sofia.davis@email.com
-                        </p>
-                    </div>
-                    <div className="ml-auto font-medium text-primary">View Annoucement</div>
-                    </div>
+                    <Button variant="outline" className="hover:bg-primary">View All</Button>
                 </CardContent>
             </Card>
-            <Card className=" auto-rows-auto">
+            <Card className=" auto-rows-auto mr-12">
                 <CardHeader>
                     <CardTitle>Class Annoucements</CardTitle>
                 </CardHeader>
                 <CardContent className="grid gap-8">
+                <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 hover:border-primary hover:cursor-pointer">
                     <div className="flex items-center gap-4">
-                    <Avatar className="hidden h-9 w-9 sm:flex">
-                        <AvatarImage src="/avatars/01.png" alt="Avatar" />
-                        <AvatarFallback>OM</AvatarFallback>
-                    </Avatar>
+                      <Avatar className="hidden h-9 w-9 sm:flex">
+                          <AvatarImage src="/avatars/01.png" alt="Avatar" />
+                          <AvatarFallback>AA</AvatarFallback>
+                      </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Dr. Computer Science</p>
-                        <p className="text-sm text-muted-foreground">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat non doloremque,
-                        nulla enim adipisci mollitia distinctio deleniti tenetur
+                        <p className="text-sm font-medium leading-none">Akshaye Aaron Azariah (Dept. CSE)</p>
+                        <p className="text-sm text-muted-foreground truncate w-64">
+                        Reminder: There will be a mandatory meeting for all faculty members of CSE Dept. on 12/12/24          
                         </p>
                     </div>
-                    <div className="ml-auto font-medium">+$1,999.00</div>
                     </div>
+                    </div>
+                    <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 hover:border-primary hover:cursor-pointer">
                     <div className="flex items-center gap-4">
                     <Avatar className="hidden h-9 w-9 sm:flex">
                         <AvatarImage src="/avatars/02.png" alt="Avatar" />
-                        <AvatarFallback>JL</AvatarFallback>
+                        <AvatarFallback>AP</AvatarFallback>
                     </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Jackson Lee</p>
-                        <p className="text-sm text-muted-foreground">
-                        jackson.lee@email.com
+                        <p className="text-sm font-medium leading-none"> Aditya Parthiban (Dept. EEE)</p>
+                        <p className="text-sm text-muted-foreground truncate w-64">
+                        ReReminder: There will be a mandatory meeting for all faculty members of EEE Dept. on 12/12/24
                         </p>
                     </div>
-                    <div className="ml-auto font-medium">+$39.00</div>
                     </div>
+                    </div>
+                    <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 hover:border-primary hover:cursor-pointer">
                     <div className="flex items-center gap-4">
                     <Avatar className="hidden h-9 w-9 sm:flex">
                         <AvatarImage src="/avatars/03.png" alt="Avatar" />
-                        <AvatarFallback>IN</AvatarFallback>
+                        <AvatarFallback>AV</AvatarFallback>
                     </Avatar>
                     <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Isabella Nguyen</p>
-                        <p className="text-sm text-muted-foreground">
-                        isabella.nguyen@email.com
+                        <p className="text-sm font-medium leading-none">Aditva Verghese (Dept. AI&DS)</p>
+                        <p className="text-sm text-muted-foreground truncate w-64">
+                        Requesting all departmental faculty to complete CO attainment.
                         </p>
                     </div>
-                    <div className="ml-auto font-medium">+$299.00</div>
                     </div>
-                    <div className="flex items-center gap-4">
-                    <Avatar className="hidden h-9 w-9 sm:flex">
-                        <AvatarImage src="/avatars/04.png" alt="Avatar" />
-                        <AvatarFallback>WK</AvatarFallback>
-                    </Avatar>
-                    <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">William Kim</p>
-                        <p className="text-sm text-muted-foreground">will@email.com</p>
                     </div>
-                    <div className="ml-auto font-medium">+$99.00</div>
-                    </div>
-                    <div className="flex items-center gap-4">
-                    <Avatar className="hidden h-9 w-9 sm:flex">
-                        <AvatarImage src="/avatars/05.png" alt="Avatar" />
-                        <AvatarFallback>SD</AvatarFallback>
-                    </Avatar>
-                    <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">Sofia Davis</p>
-                        <p className="text-sm text-muted-foreground">
-                        sofia.davis@email.com
-                        </p>
-                    </div>
-                    <div className="ml-auto font-medium">+$39.00</div>
-                    </div>
+                    <Button variant="outline" className="hover:bg-primary">View All</Button>
                 </CardContent>
             </Card>
         </div>
