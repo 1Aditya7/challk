@@ -13,8 +13,9 @@ import {
   Menu,
   Book,
   Clipboard,
-  Search,
+  BookOpenCheck,
   ShoppingCart,
+  Search,
   Users,
 } from "lucide-react"
 
@@ -90,6 +91,13 @@ function Dashboard() {
                 <LineChart className="h-4 w-4" />
                 Attendance
               </Link>
+              <Link
+                  href="#"
+                  className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+                >
+                  <BookOpenCheck className="h-4 w-4" />
+                  CIE
+                </Link>
             </nav>
           </div>
           <div className="mt-auto p-4">
@@ -123,16 +131,16 @@ function Dashboard() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="flex flex-col">
-              <nav className="grid gap-2 text-lg font-medium">
+            <nav className="grid gap-2 text-lg font-medium">
                 <Link
-                  href="/dashboard"
+                  href="#"
                   className="flex items-center gap-2 text-lg font-semibold"
                 >
                   <Clipboard className="h-6 w-6" />
                   <span className="sr-only">Acme Inc</span>
                 </Link>
                 <Link
-                  href="/dashboard"
+                  href="#"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
                 >
                   <Grid className="h-5 w-5" />
@@ -156,18 +164,25 @@ function Dashboard() {
                   Courses
                 </Link>
                 <Link
-                  href="/passbook"
+                  href="#"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
                 >
                   <Users className="h-5 w-5" />
                   Passbook
                 </Link>
                 <Link
-                  href="/attendance"
+                  href="#"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
                 >
                   <LineChart className="h-5 w-5" />
                   Attendance
+                </Link>
+                <Link
+                  href="#"
+                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+                >
+                  <LineChart className="h-5 w-5" />
+                  CIE
                 </Link>
               </nav>
               <div className="mt-auto">
@@ -226,7 +241,7 @@ function Dashboard() {
               </p>
             </div>
           </div>
-        <div className="flex flex-row gap-4 mx-20  mt-10 items-stretch">
+        <div className="flex flex-row gap-4 mx-10  mt-5 items-stretch">
         <Card className=" auto-rows-auto">
                 <CardHeader>
                     <CardTitle>College Annoucements</CardTitle>
@@ -378,6 +393,75 @@ function Dashboard() {
                 </CardContent>
             </Card>
         </div>
+        <div className="grid grid-cols-3 gap-4 mt-4 ">
+  <Card className="w-80 h-40 ml-20">
+    <CardHeader className="pb-3">
+      <CardTitle>Data Structures and Algorithms</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        Subject code:001
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Course</Button>
+    </CardFooter>
+  </Card>
+  <Card className="w-80 h-40 ml-10">
+    <CardHeader className="pb-3">
+      <CardTitle>Data base management systems</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        Subject code:002
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Course</Button>
+    </CardFooter>
+  </Card>
+  <Card className="w-80 h-40">
+    <CardHeader className="pb-3">
+      <CardTitle>Python</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        Subject code:003
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Course</Button>
+    </CardFooter>
+  </Card>
+  <Card className="w-80 h-40 ml-20">
+    <CardHeader className="pb-3">
+      <CardTitle>Mathematics</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        Subject code:004
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Course</Button>
+    </CardFooter>
+  </Card>
+  <Card className="w-80 h-40 ml-10">
+    <CardHeader className="pb-3">
+      <CardTitle>Soft skills</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        Subject code:005
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Course</Button>
+    </CardFooter>
+  </Card>
+  <Card className="w-80 h-40 ">
+    <CardHeader className="pb-3">
+      <CardTitle>Aptitude Training</CardTitle>
+      <CardDescription className="max-w-lg text-balance leading-relaxed">
+        Subject code:006
+      </CardDescription>
+    </CardHeader>
+    <CardFooter>
+      <Button className="mt-auto">View Course</Button>
+    </CardFooter>
+  </Card>
+</div>
+
     </main>
         </div>
     </div>

@@ -9,6 +9,7 @@ import {
   Book,
   Clipboard,
   Search,
+  BookOpenCheck,
   ShoppingCart,
   Users,
 } from "lucide-react"
@@ -86,6 +87,11 @@ function Dashboard() {
                 Attendance
               </Link>
             </nav>
+            <Link href="/cie"
+                className="flex items-center gap-3 rounded-lg bg-active px-3 py-2 text-muted-foreground transition-all hover:text-primary"  >
+                <BookOpenCheck className="h-4 w-4" />
+                Continous Internal Evaluation
+              </Link>
           </div>
           <div className="mt-auto p-4">
             <Card x-chunk="dashboard-02-chunk-0">
