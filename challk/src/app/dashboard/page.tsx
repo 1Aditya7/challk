@@ -4,7 +4,6 @@ import * as React from "react"
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
 
-
 import {
   Table,
   TableBody,
@@ -20,6 +19,7 @@ import {
   LineChart,
   Menu,
   Book,
+  BookOpen,
   Clipboard,
   Search,
   ShoppingCart,
@@ -54,20 +54,17 @@ function Dashboard() {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <div className="hidden border-r bg-muted/40 md:block">
-        <div className="flex h-full max-h-screen flex-col gap-2 fixed">
-          <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
+        <div className="flex h-full max-h-screen flex-col gap-2">
+          <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6 foxed">
             <Link href="/" className="flex items-center gap-2 font-semibold">
-              <Clipboard className="h-6 w-6" />
+              <BookOpen className="h-4 w-4"> </BookOpen>
               <span className="">NMIT LMS</span>
             </Link>
-            <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
-              <span className="sr-only">Toggle notifications</span>
-            </Button>
           </div>
           <div className="flex-1">
             <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
               <Link
-                href="/dashboarf"
+                href="/dashboard"
                 className="flex items-center gap-3 rounded-lg bg-secondary px-3 py-2 text-primary transition-all hover:text-primary"
               >
                 <Grid className="h-4 w-4" />
@@ -146,8 +143,8 @@ function Dashboard() {
                   href="#"
                   className="flex items-center gap-2 text-lg font-semibold"
                 >
-                  <Clipboard className="h-6 w-6" />
-                  <span className="sr-only">Acme Inc</span>
+                  <BookOpen className="h-4 w-4"> </BookOpen>
+                  <span className="sr-only">NMIT LMS</span>
                 </Link>
                 <Link
                   href="#"
@@ -258,7 +255,7 @@ function Dashboard() {
         <main className="flex flex-col gap-4 p-6 lg:gap-6 lg:p-6">
           <div className="flex items-center justify-between w-full">
             <h1 className="text-lg font-semibold md:text-2xl">Welcome Back!</h1>
-            <Button className="absolute top-16 right-20 mt-4">Enroll Course</Button>
+            <Button className="absolute top-16 right-5 mt-4">View All Courses</Button>
           </div>
           <div
             className="flex flex-1 justify-items-start items-stretch mt-2" x-chunk="dashboard-02-chunk-1">
