@@ -234,7 +234,7 @@ return (
         </div>
       </div>
 <div className="flex flex-row gap-6 mx-20 color:primary mt-10 items-stretch">
-    <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+    <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
         <div className="h-100 w-80 ">
             <Card className=" auto-rows-auto">
                     <CardHeader className="text-center">
@@ -298,7 +298,7 @@ return (
     </ReactCardFlip>
 
         
-         <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+         <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
             <div className="h-100 w-80">
                 <Card className=" auto-rows-auto">
                     <CardHeader className="text-center">
@@ -361,7 +361,7 @@ return (
                 </Card>
             </div>    
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+        <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
             <div className="h-100 w-80">
                 <Card className=" auto-rows-auto">
                     <CardHeader className="text-center">
