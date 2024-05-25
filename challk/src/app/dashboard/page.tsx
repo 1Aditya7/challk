@@ -25,6 +25,7 @@ import {
   ShoppingCart,
   BookOpenCheck,
   Users,
+  Ghost,
 } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
@@ -248,47 +249,46 @@ function Dashboard() {
               <DropdownMenuItem>Settings</DropdownMenuItem>
               <DropdownMenuItem>Support</DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Logout</DropdownMenuItem>
+              <a href="/login"><DropdownMenuItem>Logout</DropdownMenuItem></a>
             </DropdownMenuContent>
           </DropdownMenu>
         </header>
         <main className="flex flex-col gap-4 p-6 lg:gap-6 lg:p-6">
           <div className="flex items-center justify-between w-full">
-            <h1 className="text-lg font-semibold md:text-2xl">Welcome Back!</h1>
-            <Button className="absolute top-16 right-5 mt-4">View All Courses</Button>
+            <h1 className="text-lg font-semibold md:text-2xl">Welcome Back, Akshaye</h1>
+            <a href="/courses"><Button  variant="link" className="absolute top-16 right-1/4 mt-4 text-muted-foreground hover:text-primary">View All Courses</Button></a>
           </div>
           <div
             className="flex flex-1 justify-items-start items-stretch mt-2" x-chunk="dashboard-02-chunk-1">
-            <Card className="sm:col-span-1 mr-2">
+            <Card className="sm:col-span-1 mr-4">
               <CardHeader className="pb-2">
                 <CardTitle>Design and Analysis of Algorithms</CardTitle>
                 <CardDescription className="max-w-xs text-balance leading-relaxed">
-                  Introducing Our Dynamic Orders Dashboard for Seamless Management and
-                  Insightful Analysis.
+                  Introductory course into design and analysis covering
+                  mathematical analysis and more
                 </CardDescription>
               </CardHeader>
               <CardFooter>
                 <Button>View Course</Button>
               </CardFooter>
             </Card>
-            <Card className="sm:col-span-1 mr-2">
+            <Card className="sm:col-span-1 mr-4">
               <CardHeader className="pb-2">
-                <CardTitle>Design and Analysis of Algorithms</CardTitle>
+                <CardTitle>Database Management System</CardTitle>
                 <CardDescription className="max-w-xs text-balance leading-relaxed">
-                  Introducing Our Dynamic Orders Dashboard for Seamless Management and
-                  Insightful Analysis.
+                  Introductory course into database concepts and database management using MySQL
                 </CardDescription>
               </CardHeader>
               <CardFooter>
                 <Button>View Course</Button>
               </CardFooter>
             </Card>
-            <Card className="sm:col-span-1 mr-2">
+            <Card className="sm:col-span-1 mr-0">
               <CardHeader className="pb-2">
-                <CardTitle>Design and Analysis of Algorithms</CardTitle>
+                <CardTitle>Software Engineering & Project Management</CardTitle>
                 <CardDescription className="max-w-xs text-balance leading-relaxed">
-                  Introducing Our Dynamic Orders Dashboard for Seamless Management and
-                  Insightful Analysis.
+                  Introductory course teaching best practices and software methodologies as
+                  in the industry
                 </CardDescription>
               </CardHeader>
               <CardFooter>
