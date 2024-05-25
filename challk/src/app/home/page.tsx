@@ -12,9 +12,7 @@ import {
   LineChart,
   Menu,
   Book,
-  Clipboard,
   BookOpenCheck,
-  ShoppingCart,
   Search,
   Users,
 } from "lucide-react"
@@ -137,7 +135,7 @@ function Dashboard() {
                   href="#"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"
                 >
-                  <ShoppingCart className="h-5 w-5" />
+                  <Home className="h-5 w-5" />
                   LMS HOME
                 </Link>
                 <Link
@@ -391,7 +389,7 @@ function Dashboard() {
   </Card>
   <Card className="w-80 h-40 ml-10">
     <CardHeader className="pb-3">
-      <CardTitle>Data base management systems</CardTitle>
+      <CardTitle>Data Base Management Systems</CardTitle>
       <CardDescription className="max-w-lg text-balance leading-relaxed">
         Subject code:002
       </CardDescription>
@@ -424,7 +422,7 @@ function Dashboard() {
   </Card>
   <Card className="w-80 h-40 ml-10">
     <CardHeader className="pb-3">
-      <CardTitle>Soft skills</CardTitle>
+      <CardTitle>Soft Skills</CardTitle>
       <CardDescription className="max-w-lg text-balance leading-relaxed">
         Subject code:005
       </CardDescription>
