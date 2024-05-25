@@ -274,7 +274,7 @@ function Dashboard() {
                     </div>
                     </div>
                     </div>
-                    <Button variant="outline" className="hover:bg-primary">Outline</Button>
+                    <Button variant="outline" className="hover:bg-primary">View All</Button>
                 </CardContent>
             </Card>
             <Card className=" auto-rows-auto mx-20">
@@ -324,7 +324,7 @@ function Dashboard() {
                     </div>
                     </div>
                     </div>
-                    <Button variant="outline" className="hover:bg-primary">Outline</Button>
+                    <Button variant="outline" className="hover:bg-primary">View All</Button>
                 </CardContent>
             </Card>
             <Card className=" auto-rows-auto mr-12">
@@ -374,7 +374,7 @@ function Dashboard() {
                     </div>
                     </div>
                     </div>
-                    <Button variant="outline" className="hover:bg-primary">Outline</Button>
+                    <Button variant="outline" className="hover:bg-primary">View All</Button>
                 </CardContent>
             </Card>
         </div>
