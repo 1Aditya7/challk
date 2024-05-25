@@ -41,10 +41,10 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 function Dashboard() {
   return (
-    <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
-      <div className="hidden border-r bg-muted/40 md:block ">
+    <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr] fixed">
+      <div className="hidden border-r bg-muted/40 md:block fixed ">
         <div className="flex h-full max-h-screen flex-col gap-2 fixed">
-          <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
+          <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6 fixed">
             <Link href="/" className="flex items-center gap-2 font-semibold">
               <Clipboard className="h-6 w-6" />
               <span className="">NMIT LMS</span>
