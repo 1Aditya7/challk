@@ -25,7 +25,7 @@ export default function RegisterForm() {
     }
 
     try {
-      const resUserExists = await fetch("/api/userExists", {
+      const resUserExists = await fetch("./api/userExists", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ export default function RegisterForm() {
         return;
       }
 
-      const res = await fetch("/api/signup", {
+      const res = await fetch("./api/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
