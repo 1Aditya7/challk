@@ -66,6 +66,7 @@ import {
   TooltipProvider,
 } from "@/components/ui/tooltip"
 
+
 function App() {
     return (
       <TooltipProvider>
@@ -93,41 +94,41 @@ function Dashboard() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <Link href="/dashboard">Dashboard</Link>
+                  <Link href="/dashboard" className="hover:text-orange-500">Dashboard</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbPage>Attendence</BreadcrumbPage>
+                <BreadcrumbPage className="hover:text-orange-500">Attendence</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
           <div className="relative ml-auto flex-1 md:grow-0">
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
             <Input
-              type="search"
+              type="search\"
               placeholder="Search..."
-              className="w-full rounded-lg bg-orange-500 pl-8 md:w-[200px] lg:w-[336px]"
+              className="w-full rounded-lg pl-8 md:w-[200px] lg:w-[336px] border border-primary"
             />
           </div>
         </header>
         <main className="grid flex-1 items-start mr-14">
-          <Tabs defaultValue="all">
+          <Tabs defaultValue="dsa">
             <div className="flex items-center">
               <TabsList>
-                <TabsTrigger value="dsa">Data Structures and Algorithms</TabsTrigger>
-                <TabsTrigger value="data base">Data base management systems</TabsTrigger>
-                <TabsTrigger value="python">Python</TabsTrigger>
-                <TabsTrigger value="math">Mathematics</TabsTrigger>
-                <TabsTrigger value="soft skills">Soft skills</TabsTrigger>
+                <TabsTrigger value="dsa" >Data Structures and Algorithms</TabsTrigger>
+                <TabsTrigger value="data base" >Data base management systems</TabsTrigger>
+                <TabsTrigger value="python" >Python</TabsTrigger>
+                <TabsTrigger value="math" >Mathematics</TabsTrigger>
+                <TabsTrigger value="soft skills" >Soft skills</TabsTrigger>
                 <TabsTrigger value="aptitude">Aptitude Training</TabsTrigger>
               </TabsList>
               <div className="ml-auto flex items-center gap-2">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="outline" size="sm" className="h-8 gap-1">
+                    <Button variant="outline" size="sm" className="h-8 gap-1 hover:bg-primary hover:text-white" >
                       <ListFilter className="h-3.5 w-3.5" />
-                      <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
+                      <span className="sr-only sm:not-sr-only sm:whitespace-nowrap" >
                         Filter
                       </span>
                     </Button>
@@ -144,7 +145,7 @@ function Dashboard() {
                     </DropdownMenuCheckboxItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
-                <Button size="sm" variant="outline" className="h-8 gap-1">
+                <Button size="sm" variant="outline" className="h-8 gap-1 hover:bg-primary hover:text-white">
                   <File className="h-3.5 w-3.5" />
                   <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
                     Export
