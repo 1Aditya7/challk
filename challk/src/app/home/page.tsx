@@ -226,7 +226,7 @@ function Dashboard() {
               </p>
             </div>
           </div>
-        <div className="flex flex-row gap-4 mx-20  mt-10 items-stretch">
+        <div className="flex flex-row gap-4 mx-20  mt-2 items-stretch">
         <Card className=" auto-rows-auto">
                 <CardHeader>
                     <CardTitle>College Annoucements</CardTitle>
@@ -374,10 +374,64 @@ function Dashboard() {
                     </div>
                     </div>
                     </div>
-                    <Button variant="outline" className="hover:bg-primary">View All</Button>
+                    <Button variant="outline" className="hover:bg-primary ">View All</Button>
                 </CardContent>
             </Card>
         </div>
+        <div className="flex flex-row gap-4 mx-20  mt-5">
+        <div className="w-30 h-30">
+        <Card className=" w-64 h-50 mp-10 ml-20 mr-4 mt-5 flex-grow flex flex-col items-center justify-end ">
+      <CardHeader>
+        <CardTitle>Computer Engineering</CardTitle>
+        <CardDescription >
+          Find all computer science courses here.
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+      <Button variant="outline" className="hover:bg-primary">View courses</Button>
+      </CardContent>
+    </Card>
+    </div>
+    <div className="w-30 h-30">
+    <Card className="w-64 h-50 mp-10 ml-10 mt-5 flex-grow flex flex-col items-center justify-end ">
+      <CardHeader>
+        <CardTitle>Electronics Engineering</CardTitle>
+        <CardDescription >
+          Find all Electronics courses here.
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+      <Button variant="outline" className="hover:bg-primary">View courses</Button>
+      </CardContent>
+    </Card>
+    </div>
+    <div className="w-30 h-30">
+    <Card className="w-64 h-50 mp-10 ml-10 mt-5 flex-grow flex flex-col items-center justify-end ">
+      <CardHeader>
+        <CardTitle>Mechanical Engineering</CardTitle>
+        <CardDescription >
+          Find all Mechanical courses here.
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+      <Button variant="outline" className="hover:bg-primary">View courses</Button>
+      </CardContent>
+    </Card>
+    </div>
+    <div className="w-30 h-30">
+    <Card className="w-64 h-50 mp-10 ml-10 mt-5 flex-grow flex flex-col items-center justify-end ">
+      <CardHeader>
+        <CardTitle>Biomedical Engineering</CardTitle>
+        <CardDescription >
+          Find all Biomedical courses here.
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+      <Button variant="outline" className="hover:bg-primary">View courses</Button>
+      </CardContent>
+    </Card>
+    </div>
+    </div>
     </main>
         </div>
     </div>
