@@ -278,20 +278,20 @@ return (
 
                     <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 ">
                     <div className="flex items-center gap-4">
-                    <div className="grid gap-3">
-                    <p className="text-sm font-medium leading-none"> Name: Peter Parker </p> 
-                        <p className="text-sm font-medium leading-none"> Father name: Ben parker </p>
-                        <p className="text-sm font-medium leading-none"> Address: NMIT main gate, BSF campus <br/>, Yelahanka, Bangalore </p>
-                        <p className="text-sm font-medium leading-none"> Phone number: 1234567890 </p>
-                        <p className="text-sm font-medium leading-none"> Blood Grouo: AB +ve </p>
-
-
-                    </div>
-                    </div>
-                    </div>
                     <button onClick={() => setFlip(!flip)}>
-                        Flip
+                      <div className="grid gap-3">
+                      <p className="text-sm font-medium leading-none"> Name: Peter Parker </p> 
+                          <p className="text-sm font-medium leading-none"> Father name: Ben parker </p>
+                          <p className="text-sm font-medium leading-none"> Address: NMIT main gate, BSF campus <br/>, Yelahanka, Bangalore </p>
+                          <p className="text-sm font-medium leading-none"> Phone number: 1234567890 </p>
+                          <p className="text-sm font-medium leading-none"> Blood Grouo: AB +ve </p>
+                      </div>
                     </button>
+                    </div>
+                    </div>
+                    
+
+                    
                 </CardContent>
             </Card>
         </div>    
@@ -344,21 +344,19 @@ return (
 
                         <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 ">
                         <div className="flex items-center gap-4">
+                        <button onClick={() => setFlip(!flip)}>
                         <div className="grid gap-3">
                         <p className="text-sm font-medium leading-none"> Name: Peter Parker </p> 
                             <p className="text-sm font-medium leading-none"> Address: NMIT main gate, BSF campus <br/>,  Yelahanka, Bangalore </p>
                             <p className="text-sm font-medium leading-none"> Stop Location: Drdo bus stop </p>
                             <p className="text-sm font-medium leading-none"> Phone number: 1234567890 </p>
                             <p className="text-sm font-medium leading-none"> Fee: Paid </p>
-                            
-                            
-
-                        </div>
-                        </div>
-                        </div>
-                        <button onClick={() => setFlip(!flip)}>
-                            Flip
+                        </div>  
                         </button>
+                        </div>
+                        </div>
+                        
+
                     </CardContent>
                 </Card>
             </div>    
@@ -405,21 +403,20 @@ return (
 
                         <div className="rounded-lg border bg-card text-card-foreground shadow auto-rows-auto p-4 ">
                         <div className="flex items-center gap-4">
+                        <button onClick={() => setFlip(!flip)}>
                         <div className="grid gap-3">
                         <p className="text-sm font-medium leading-none"> Last book returned: Yes </p>
                         <p className="text-sm font-medium leading-none"> Late return fine: Rs 100 </p>
                         <p className="text-sm font-medium leading-none"> Unreturned books: 3 </p>
                         <p className="text-sm font-medium leading-none"> Books name: 1. Theory of relativity <br/> 2. How the Time works.</p>
                         <p className="text-sm font-medium leading-none"> Total fine: Rs 2100 </p>
+                        </div>
+                        </button>
+                        </div>
+                        </div>
                         
                             
-
-                        </div>
-                        </div>
-                        </div>
-                        <button onClick={() => setFlip(!flip)}>
-                            Flip
-                        </button>
+                        
                     </CardContent>
                 </Card>
             </div>    
