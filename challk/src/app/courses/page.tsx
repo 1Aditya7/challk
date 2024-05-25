@@ -86,13 +86,14 @@ function Dashboard() {
                 <LineChart className="h-4 w-4" />
                 Attendance
               </Link>
-            </nav>
             <Link href="/cie"
                 className="flex items-center gap-3 rounded-lg bg-active px-3 py-2 text-muted-foreground transition-all hover:text-primary"  >
                 <BookOpenCheck className="h-4 w-4" />
-                Continous Internal Evaluation
+                CIE
               </Link>
+              </nav>
           </div>
+          
           <div className="mt-auto p-4">
             <Card x-chunk="dashboard-02-chunk-0">
               <CardHeader className="p-2 pt-0 md:p-4">
@@ -170,6 +171,14 @@ function Dashboard() {
                   <LineChart className="h-5 w-5" />
                   Attendance
                 </Link>
+                <Link
+                  href="#"
+                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+                >
+                  <BookOpenCheck className="h-5 w-5" />
+                  CIE
+                </Link>
+                
               </nav>
               <div className="mt-auto">
                 <Card>
