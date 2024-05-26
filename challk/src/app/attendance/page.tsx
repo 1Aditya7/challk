@@ -1,31 +1,28 @@
-import Image from "next/image"
-import Link from "next/link"
+import Link from 'next/link';
+import React from 'react';
 import {
-  File,
+  CircleUser,
+  Grid,
   Home,
   LineChart,
-  ListFilter,
-  MoreHorizontal,
-  Package,
-  Package2,
-  PanelLeft,
-  PlusCircle,
+  Menu,
+  Book,
+  Clipboard,
   Search,
-  Settings,
+  BookOpenCheck,
   ShoppingCart,
-  Users2,
-} from "lucide-react"
+  Users,
+} from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge"
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { Button } from "@/components/ui/button"
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs"
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
@@ -33,18 +30,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+} from '@/components/ui/card';
+
 import {
   Table,
   TableBody,
@@ -53,66 +40,164 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs"
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-  TooltipProvider,
-} from "@/components/ui/tooltip"
 
-
-function App() {
-    return (
-      <TooltipProvider>
-        <Dashboard />
-      </TooltipProvider>
-    );
-  }
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuCheckboxItem,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { Input } from '@/components/ui/input';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 function Dashboard() {
+  const courses = [
+    { id: '22CS41A', name: 'Design and Analysis of Algorithms' },
+    { id: '22CS42A', name: 'Software Engineering and Project Management' },
+    { id: '22CS44A', name: 'Database Management System' },
+  ];
+
   return (
-    <div className="flex min-h-screen w-full flex-col bg-muted/40">
-      <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
-        <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
+    <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
+      <div className="hidden border-r bg-muted/40 md:block">
+        <div className="flex h-full max-h-screen flex-col gap-2 fixed">
+          <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
+            <Link href="/" className="flex items-center gap-2 font-semibold">
+              <Clipboard className="h-6 w-6" />
+              <span className="">NMIT LMS</span>
+            </Link>
+          </div>
+          <div className="flex-1">
+            <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
+              <Link href="/dashboard" className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary">
+                <Grid className="h-4 w-4" />
+                Dashboard
+              </Link>
+              <Link href="/home" className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary">
+                <Home className="h-4 w-4" />
+                LMS Home
+              </Link>
+              <Link href="#" className="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary">
+                <Book className="h-4 w-4" />
+                Courses
+              </Link>
+              <Link href="/passbook" className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary">
+                <Users className="h-4 w-4" />
+                Passbook
+              </Link>
+              <Link href="#" className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary">
+                <LineChart className="h-4 w-4" />
+                Attendance
+              </Link>
+            </nav>
+            <Link href="/cie"
+                className="flex items-center gap-3 rounded-lg bg-active px-7 py-2 text-muted-foreground transition-all hover:text-primary"  >
+                <BookOpenCheck className="h-4 w-4" />
+                Continous Internal Evaluation
+              </Link>
+          </div>
+          <div className="mt-auto p-4">
+            <Card x-chunk="dashboard-02-chunk-0">
+              <CardHeader className="p-2 pt-0 md:p-4">
+                <CardTitle>Class Schedule</CardTitle>
+                <CardDescription>
+                  Click below for class schedule.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-2 pt-0 md:p-4 md:pt-0">
+                <Button size="sm" className="w-full">
+                  Schedule
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col">
+        <header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
           <Sheet>
             <SheetTrigger asChild>
-              <Button size="icon" variant="outline" className="sm:hidden">
-                <PanelLeft className="h-5 w-5" />
-                <span className="sr-only">Toggle Menu</span>
+              <Button variant="outline" size="icon" className="shrink-0 md:hidden">
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="sm:max-w-xs">
+            <SheetContent side="left" className="flex flex-col">
+              <nav className="grid gap-2 text-lg font-medium">
+                <Link href="#" className="flex items-center gap-2 text-lg font-semibold">
+                  <Clipboard className="h-6 w-6" />
+                  <span className="sr-only">Acme Inc</span>
+                </Link>
+                <Link href="#" className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
+                  <Grid className="h-5 w-5" />
+                  Dashboard
+                </Link>
+                <Link href="#" className="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground">
+                  <ShoppingCart className="h-5 w-5" />
+                  LMS HOME
+                  <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    6
+                  </Badge>
+                </Link>
+                <Link href="#" className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
+                  <Book className="h-5 w-5" />
+                  Courses
+                </Link>
+                <Link href="#" className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
+                  <Users className="h-5 w-5" />
+                  Passbook
+                </Link>
+                <Link href="#" className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
+                  <LineChart className="h-5 w-5" />
+                  Attendance
+                </Link>
+              </nav>
+              <div className="mt-auto">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>CLASS SCHEDULE</CardTitle>
+                    <CardDescription>
+                      Click below to see Class Schedule.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <Button size="sm" className="w-full">
+                      schedule
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
             </SheetContent>
           </Sheet>
-          <Breadcrumb className="hidden md:flex">
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/dashboard" className="hover:text-orange-500">Dashboard</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage className="hover:text-orange-500">Attendence</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          <div className="relative ml-auto flex-1 md:grow-0">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-            <Input
-              type="search\"
-              placeholder="Search..."
-              className="w-full rounded-lg pl-8 md:w-[200px] lg:w-[336px] border border-primary"
-            />
+          <div className="w-full flex-1">
+            <form>
+              <div className="relative">
+                <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+                <Input type="search" placeholder="Search Courses" className="w-full appearance-none bg-background pl-8 shadow-none md:w-2/3 lg:w-1/3" />
+              </div>
+            </form>
           </div>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="secondary" size="icon" className="rounded-full">
+                <CircleUser className="h-5 w-5" />
+                <span className="sr-only">Toggle user menu</span>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>Settings</DropdownMenuItem>
+              <DropdownMenuItem>Support</DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>Logout</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </header>
-        <main className="grid flex-1 items-start mr-14">
+        <main className="grid flex-1 items-start mr-8 ml-8 mt-8">
           <Tabs defaultValue="dsa">
             <div className="flex items-center">
               <TabsList>
@@ -127,7 +212,6 @@ function Dashboard() {
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button variant="outline" size="sm" className="h-8 gap-1 hover:bg-primary hover:text-white" >
-                      <ListFilter className="h-3.5 w-3.5" />
                       <span className="sr-only sm:not-sr-only sm:whitespace-nowrap" >
                         Filter
                       </span>
@@ -146,7 +230,6 @@ function Dashboard() {
                   </DropdownMenuContent>
                 </DropdownMenu>
                 <Button size="sm" variant="outline" className="h-8 gap-1 hover:bg-primary hover:text-white">
-                  <File className="h-3.5 w-3.5" />
                   <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
                     Export
                   </span>
@@ -892,9 +975,10 @@ function Dashboard() {
               </Card>
             </TabsContent>
           </Tabs>
-        </main>
-      </div>
+        </main>      
+        </div>
     </div>
-  )
+  );
 }
-export default App;
+
+export default Dashboard;
