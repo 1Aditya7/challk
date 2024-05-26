@@ -35,15 +35,13 @@ import {
 
 
 export default function CourseDetails() {
-  const { courseId } = useParams();
-
   return (
     <div>
     <Card className="overflow-hidden mt-10 mr-4 ml-4">
         <CardHeader className="flex flex-row items-start bg-muted/50">
           <div className="grid gap-0.5">
             <CardTitle className="group flex items-center gap-2 text-lg">
-              Design and Analysis of Algorithms - {courseId}
+              Design and Analysis of Algorithms
             </CardTitle>
             <CardDescription>Course Instructor: Ms. Algo Expert</CardDescription>
           </div>
