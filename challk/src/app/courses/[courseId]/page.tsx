@@ -33,7 +33,6 @@ import {
   PaginationItem,
 } from "@/components/ui/pagination"
 
-
 export default function CourseDetails() {
   return (
     <div>
